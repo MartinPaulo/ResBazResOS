@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>NeCTAR Cloud Lessons</title>
+
+    <meta name="description" content="Slides for an introductory course on the NeCTAR cloud.">
+    <meta name="author" content="Martin Paulo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+<!-- to give this presentation list items numbered A, B, C etc.. for use in questions -->
+<style type="text/css">.reveal ol {list-style-type: upper-alpha;}</style>
+<!-- Slides go here -->
+<section data-markdown><script type="text/template">
+
+# Roll up to the Research Cloud mystery tour!
+
+your tour guide is ...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## A line infection checklist
+
+<div align="left">
+▢ wash hands with soap, <br/>
+▢ clean the patient’s skin with chlorhexidine antiseptic, <br/>
+▢ put sterile drapes over the entire patient, <br/>
+▢ put on a sterile mask, hat, gown, and gloves, <br/>
+▢ put a sterile dressing over the catheter site once the line is in
+</div>
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Launch your instance!
+
+Use following checklist to launch an instance!
+
+http://tinyurl.com/quick_start
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Trial Projects
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question
+
+What's your trial project lifetime?
+
+1. for ever and ever after
+1. three months from today
+1. depends on how much I use it... 
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Terminate your free computer!
+
+Can you work out how to terminate your free computer? 
+Test your discovery by terminating the one you've just started.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Why do you care about this?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question
+
+Currently, how much does it cost a researcher to use the Research Cloud?
+
+1. Gazillions!
+1. Squillions!
+1. Billions!
+1. Some unknown $$!
+1. It’s currently free **at the point of service**
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Security Groups
+
+Create a Security Group with the help of the security group checklist
+
+http://tinyurl.com/creating-a-security-group
+
+*Tip:* Preface the security group name with an "sg_" so that you know that
+its a security group when you see the name...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Question
+
+I change the rules in a security group by removing port 80 (http). Mysteriously a web server on another VM in the 
+project stops "working". Could it be because:
+
+1. The security group was shared with the other machine?
+1. The web server inexplicably broke?
+1. The other machine itself failed?
+1. NeCTAR are experiencing a network problem?
+1. All of the above... ☹
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Count of less than 30 security groups
+
+Did anyone find out why this is in the checklist?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## HTTP vs HTTPS
+
+Can anyone tell us about these two?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## What is SSH?
+
+Anyone? Please?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## And CIDR?
+
+(And no, it's not a drink!)
+
+</script></section>
+    </div>
+
+</div>
+
+<script src="reveal.js/lib/js/head.min.js"></script>
+<script src="reveal.js/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'reveal.js/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'reveal.js/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'reveal.js/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'reveal.js/plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'reveal.js/plugin/zoom-js/zoom.js', async: true},
+            {src: 'reveal.js/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
