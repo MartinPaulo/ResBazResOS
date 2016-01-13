@@ -12,6 +12,21 @@ in painful tears. This course introduces you to the the tools and the underlying
 thus reducing your risk and saving you time and trouble in your journey to the cloud. And given the scale and low price 
 of the research cloud you will, most likely, be making that journey.
 
+## Git
+
+If you check this repository out be aware that it uses Git submodules to manage the reveal.js dependency.
+To also checkout reveal.js, you will have to either:
+
+    # fetch it all in one hit
+    git clone --recursive https://github.com/MartinPaulo/ResBazResOS.git
+
+Or:
+
+    # take it step by step
+    git clone https://github.com/MartinPaulo/ResBazResOS.git
+    git submodule init
+    git submodule update
+
 ## Folders
 
 The directories that make up this project are as follows:
