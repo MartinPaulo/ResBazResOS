@@ -6,30 +6,45 @@ the changes to the existing course. It seems like the fastest way of doing this.
 ##The running order is:
 
 Instructor introduces himself to the audience
+
 The line checklist (a short story about checklists)
+
 Launch your free PC! (with a basic checklist)
+
 What you’ve just done:
 
 * Project Trials
 * Why you want to not leave your PC running (trial project limits)
 
 Kill your free PC (without a checklist - challenge!).
+
 Why do you care about your free PC? 
 
 * The two researchers,
 * a place to try your new skills...
 
 Ok: What’s a security group?
+
 More on Checklists
+
 Create a security group using a checklist
+
 But how do you manage your free PC?
+
 Intro to ssh and keys
+
 Create a KeyPair using a checklist
+
 Fire up a new instance using your security group and key pair.
+
 Ssh into your instance
+
 Upgrade and update your instance
+
 The Object Store: your free USB on the cloud (ditch if time is an issue?)
+
 How to get help on the cloud
+
 Where to go from here…
 
 * Allocations
