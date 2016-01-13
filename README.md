@@ -1,4 +1,4 @@
-# ResBaz'16 research cloud lesson plan
+# ResBaz'16 research cloud lesson
 
 This course aims to give researchers an introduction to the NeCTAR cloud in a 90 minute session.
 
