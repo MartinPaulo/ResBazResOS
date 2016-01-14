@@ -5,29 +5,27 @@ the changes to the existing course. It seems like the fastest way of doing this.
 
 ##The running order is:
 
-Instructor introduces himself to the audience
+✓ Instructor introduces himself to the audience
 
-The line checklist (a short story about checklists)
+✓ The line checklist (a short story about checklists)
 
-Launch your free PC! (with a basic checklist)
+✓ Launch your free PC! (with a basic checklist)
 
 What you’ve just done:
 
-* Project Trials
-* Why you want to not leave your PC running (trial project limits)
+* ✓ Project Trials
+* ✓ Why you want to not leave your PC running (trial project limits)
 
-Kill your free PC (without a checklist - challenge!).
+✓ Kill your free PC (without a checklist - challenge!).
 
-Why do you care about your free PC? 
+✓ Why do you care about your free PC? 
 
-* The two researchers,
-* a place to try your new skills...
+* ✓ The two researchers,
+* ✓ a place to try your new skills...
 
-Ok: What’s a security group?
+✓ Ok: What’s a security group?
 
-More on Checklists
-
-Create a security group using a checklist
+✓ Create a security group using a checklist
 
 But how do you manage your free PC?
 
