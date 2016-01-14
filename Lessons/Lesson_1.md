@@ -322,7 +322,60 @@ Secure Shell. We'll cover it shortly. Patience!
 
 Classless Internet Domain Routing, a snazzy way of specifying a range of internet addresses in one fell swoop.
 
-# Keypairs
+## The Terminal 
+
+-- *Slide* --
+
+Your free PC on the cloud has no keyboard, monitor or mouse. Do you have any hope of installing or removing
+software on it?
+
+Hold up a Red sticky note if you say "No".
+and a Green one if you think that, somehow, somewhere, there is hope for her.
+
+**A** The Greens have it: there's always hope!
+
+In the old days, because computing was so expensive, many people would share a single computer by means of terminals. 
+A terminal was a keyboard and a screen, and many terminals could be attached to a single computer.
+ 
+These terminals supported a basic text based interface that allowed you to do work on the computer it was attached to.
+
+You'll be unsurprised to learn that with the passage of time, people wrote programs that emulated these terminals. So 
+one computer could act as the terminal for another computer - or even itself!
+
+So you can run a terminal application on your computer to do work on your own computer. You might recognize it as the
+"Command Line"
+
+Its very simple to run: and if you take the time to learn about it, all your friends will think you are a computer
+guru!
+
+But the main advantage for us is that your local terminal program can also be used to run a terminal on 
+another computer. 
+
+-- *Slide* --
+
+## This is our magic
+
+```bash
+ssh
+```
+
+`ssh` stands for **s**ecure **sh**ell. 
+
+-- *Slide End* --
+
+It connects a terminal on one machine to another target machine, thus allowing 
+you to use the text based interface on the target machine. It kind of teleports 
+the target machine terminal to yours…
+
+You can think of `ssh` as your cloud login command.
+
+Which is why you've been seeing the `ssh` references in the security groups.
+
+`ssh` uses public key cryptography to connect with the target machine. 
+
+Which needs key pairs to work. 
+
+# Key Pairs
 
 "What's a key pair?" I hear you not ask.
 
@@ -340,23 +393,71 @@ under lock and key. Me? Meh, not so much.
 Keys are a very similar concept. They have two halves. Anything you encrypt with one half can be decrypted by anyone 
 with the other half.
 
-On this tab you create key pairs. NeCTAR will keep one, the public key, and you will download the private key, the 
-other half, to your local machine.
+There's a special page on the research cloud dashboard that helps you to create key pairs. 
+NeCTAR will keep one, the public key, and you will download the private key, the other half of the pair, 
+to your local machine.
 
-When NeCTAR fire up a machine for you, they inject the public key into your machine. Anyone with the private key will 
-be able to communicate with and control that machine. Like the clay seals of yesteryear, you want to keep your private
-key in a secure location. 
+When NeCTAR fire up a machine for you, they inject the public key into your machine. 
+Anyone with the private key will be able to communicate with and control that machine. 
+Like the clay seals of yesteryear, you want to keep your private key in a secure location. 
 
-Now I'm going to generate the keypair that I'm going to use to access the instance to manage it.
+And again, we've create a checklist to help you create a keypair.
 
-**Q:** You fire up your machine. Days later, you realise that you’ve lost your private key. Will you ever be able to 
+-- *Slide* --
+
+## Key Pairs
+
+Create a Keypair with the help of the key pair checklist
+
+http://tinyurl.com/creating-a-keypair
+
+*Tip:* Preface the security group name with an "kp_" so that you know that
+its part of a keypair when you see the name...
+
+-- *Slide End* --
+
+Please hold up a Red sticky note if you need help
+and a Green one once you are done.
+
+Ok: so now you have created a key pair and a security group. Let's use them to fire up a new free pc on the 
+Research cloud:
+
+-- *Slide* --
+
+## Launch an instance
+
+Use the launch an instance checklist to launch an instance.
+
+http://tinyurl.com/starting-an-instance
+ 
+-- *Slide End* --
+
+Please hold up a Red sticky note if you need help
+and a Green one once you are done.
+
+-- *Slide* --
+
+You fire up your machine. Days later, you realise that you’ve lost your private key. Will you ever be able to 
 access and control your machine from that point onward?
 
 Please hold up a Red sticky note if the answer is "No" 
 and a Green one if the answer is "Yes".
 
+-- *Slide End* --
+
 **A:** No, the chances are extremely high that you've lost your machine for good.
 
 
+
+
+
+-- *Slide* --
+
+You can think of the Dashboard we've just explored as the cockpit/drivers seat for an entire Data Centre - <br /> 
+BUT it is a car/plane you can crash!!! <br />
+And we *want* you to crash it and restart it regularly...<br />
+\#failfast!
+
+-- *Slide End* --
 
 https://www.youtube.com/watch?v=YEBfamv-_do

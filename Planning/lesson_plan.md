@@ -27,13 +27,13 @@ What you’ve just done:
 
 ✓ Create a security group using a checklist
 
-But how do you manage your free PC?
+✓ But how do you manage your free PC?
 
-Intro to ssh and keys
+✓ Intro to ssh and keys
 
-Create a KeyPair using a checklist
+✓ Create a KeyPair using a checklist
 
-Fire up a new instance using your security group and key pair.
+✓ Fire up a new instance using your security group and key pair.
 
 Ssh into your instance
 
