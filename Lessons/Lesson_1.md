@@ -29,15 +29,15 @@ your tour guide is ...
 **Answer:** In 2001 a critical-care specialist at John Hopkins Hospital designed a checklist to prevent line 
 infections. This is it!
 
-So why are you being shown a line infection checklist?
+So why are you being shown a line infection checklist on a session about the research cloud?
 
 Well, the line infection steps have been known and taught for years. But frustratingly line infections still
-happen. So the specialist gave this checklist to nurses and then asked the them to observe the doctors for a 
+happen. So the specialist gave this checklist to nurses and then asked them to observe the doctors for a 
 month as they put lines into patients, and record how often they completed each step. 
 
 In more than a third of patients, they skipped at least one of the steps.
 
-They then asked the nurses stop the doctors whenever a step was skipped.
+The specialist then asked the nurses stop the doctors whenever a step was skipped.
 
 The ten-day line-infection rate went from eleven per cent to zero. 
 
@@ -58,7 +58,7 @@ So with that in mind we've prepared some checklists for you use to launch your f
 
 Use following checklist to launch an instance!
 
-http://tinyurl.com/quick_start
+http://tinyurl.com/launch-pdf
 
 -- *Slide End* --
 
