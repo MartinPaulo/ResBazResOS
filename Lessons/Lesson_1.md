@@ -82,8 +82,9 @@ the Research Cloud.
 If you only use your smallest computer for short periods of time, and **terminate** them religiously after 
 each run, your trial project will last far longer. 
 
-And when your trial project has expired, you can still log in to the dashboard to view and request 
-allocations. You can even fill in an allocation request to extend your existing trial project.
+When your trial project has expired you can still log in to the dashboard to view and request 
+a project allocation on the research cloud. You can even request to extend the duration of your
+existing trial project.
 
 Regardless of your path,  your trial project should give you the time to learn the Research Cloud ropes!
 
@@ -168,27 +169,42 @@ steroids!
 
 And all of this is backed by a research facing organization that is not driven by profit.
 
-But before you go rushing to the Research Cloud, there are some important gotchas that you have to understand. 
-The cloud environment is a not quite the same as dedicated computer on your desktop! 
+But before you go rushing to the Research Cloud, you have to understand that the cloud
+is a not quite the same as dedicated computer on your desktop! 
 
-What I hope to do is to give you enough information to get your own machines up and running on the Research Cloud, 
-and where to go to learn the gotcha’s.
+What we are going to do today is to give you enough information to get your own machines up and running on the 
+Research Cloud, and importanly, where to go to learn the gotcha’s.
 
 ## Security Groups
 
 One of the things you needed to do in launching your free PC was to select a security group called 'http'.
 
-Let's see if I can explain this in a bit more detail.
+Let's see if I can explain this step in a bit more detail.
 
-Network messages destined for a computer are broken up into packets. Once a packet reaches a computer how does the
-computer know which application the packet is intended for? 
+A security group is a set of rules used to create a firewall for your computer in the cloud. 
+
+-- *Slide* --
+
+## What's a firewall?
+
+1. A wall used to prevent the spread of fire
+1. An attractive wall made from fire
+1. Something that blocks or allows network traffic
+1. What's built on top of an ice foundation
+
+-- *Slide End* --
+
+**Answer A and C**
+
+How firewalls work is that network messages destined for a computer are broken up into packets. Once a packet
+reaches a computer how does the computer know which application the packet is intended for? 
 
 Well, the operating system allocates a different number to each running application. Then all network packets that
 carry that number are sent to that application. This number is called a port number.
 
-A security group is a firewall that allows all outgoing network packets to pass, but blocks all incoming network 
-packets by default. But you can open "ports" in the security group, hence allowing inbound network packets with a 
-matching port number through to the application on the instance.
+By default the firewall defined by a security group allows all outgoing network packets to pass, 
+but blocks all incoming network packets. But you can open "ports" in the security group, hence allowing
+inbound network packets with a matching port number through to the application on the instance.
 
     If you get lots of blank looks, the following twisted metaphor might help:
     
@@ -205,17 +221,18 @@ matching port number through to the application on the instance.
     to go to. And well known applications get well known port numbers. So web servers use port 80, for example.
     
     So simply put a security group allows you to define the port numbers that packets from the outside world must have if 
-    they are going to be allowed to reach your VM. 
+    they are going to be allowed to reach your cloud computer. 
     
     Any packets with a different port number don’t even make it to your machine. They are just thrown overboard!
 
 Your trial project comes with several pre-configured security groups. But if you request a project via an allocation
-you get no security group preconfigured for you. And what if you want to run an application that doesn't fit into
-the predefined ranges? Simple. 
+you get no security group pre-configured for you. And what if you want to run an application that doesn't fit into
+the predefined ones? Simple. 
 
-You just have to define your own. And so that's what you'll do now.
+You just have to define your own. And so that's what you'll do now. You are going to create a single security group
+that allows traffic to reach two applications.
 
-And for course we've created a checklist to guide you. This ones a little more formal.
+And of course we've created a checklist to guide you. This ones a little more formal.
 
 -- *Slide* --
 
@@ -233,8 +250,10 @@ its a security group when you see the name...
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
 
+**NB** The same security group can be applied to many computers in your project.
+
 **NB:** You can edit a security group at any time.  And the changes will immediately apply to all running virtual 
-machines using that security group.
+machines that have that security group applied.
 
 **NB:** This also means that if you share security groups amongst VM’s, you have to be careful: if you change rules for 
 one server, you might inadvertently break another.
@@ -257,10 +276,6 @@ project stops "working". Could it be because:
 Walk through each option, describing how it could affect the instance you are trying to reach.
 
 **Answer: E.** Yes, it’s true. The research cloud can experience network issues from time to time. 
-
-**NB:** Under some circumstances, you might find that you already have security groups defined for your project: or that
-the default security group has ports/applications set up for it. So it is wise to review your projects security groups
-and to understand what is provided.
 
 -- *Slide* --
 
@@ -295,7 +310,7 @@ Anyone? Please?
 
 -- *Slide End* --
 
-Secure Shell. We'll cover it in the next lesson. Patience!
+Secure Shell. We'll cover it shortly. Patience!
 
 -- *Slide* --
 
@@ -305,10 +320,9 @@ Secure Shell. We'll cover it in the next lesson. Patience!
 
 -- *Slide End* --
 
-Classless Internet Domain Routing, a snazzy way of specifying internet address ran
+Classless Internet Domain Routing, a snazzy way of specifying a range of internet addresses in one fell swoop.
 
 # Keypairs
-
 
 "What's a key pair?" I hear you not ask.
 
