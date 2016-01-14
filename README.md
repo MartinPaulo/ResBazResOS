@@ -70,6 +70,7 @@ what has just been done.
 
 1. [ ] Can we have some sort of shell in place via DIT4C that will allow ssh without people having to install
        anything?
+1. [ ] We should showcase Intersect's [Launchpod](https://launchpod.intersect.org.au/)? 
 
 ## Notes
 
