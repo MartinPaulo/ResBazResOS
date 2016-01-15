@@ -41,7 +41,7 @@ Upgrade and update your instance
 
 ✓ The Object Store: your free USB on the cloud (ditch if time is an issue?)
 
-How to get help on the cloud
+✓ How to get help on the cloud
 
 Where to go from here…
 

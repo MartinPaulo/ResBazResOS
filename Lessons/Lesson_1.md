@@ -543,11 +543,100 @@ and a Green one once you are done.
 
 -- *Slide End* --
 
-
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
 
 You now have a public handle that you can share with the world!
+
+-- *Slide* --
+
+## Settings drop down
+
+-- *Slide End* --
+
+The drop down on the right is the settings drop down. It’s not exactly the most intuitive of drop downs IMHO.
+
+If you select it, you’ll see that there are three options: "Settings", "Help" and "Sign Out".
+
+### The Help Menu
+
+**Activity:** Get everyone to select "help" on the settings drop down.
+
+**Q:** Are you all looking at the dashboard - or at something else?
+
+**A:** Hold up a Red sticky note if you are still looking at the dashboard!
+       
+A new tab has opened, taking you to the homepage of the Research Cloud support site. 
+
+The support site has loads of useful documentation. It has beginners guides, online training,
+and knowledge bases.
+
+Scroll down to see the quick links to all this goodness.
+
+There's also a handy link that if followed tells you how to contact Support.
+
+-- *Slide* --
+
+## Question
+
+Can you find the support email address?
+
+Is it:
+
+1. support@rc.nectar.org.au
+1. help_me@rc.nectar.org.au
+1. do_not_reply@rc.nectar.org.au 
+1. the_big_boss@rc.nectar.org.au
+
+-- *Slide End* --
+
+**Answer: A**
+
+The support site is well worth exploring. But we are not going to do it now.
+Remember, you now know where to go when you want to find helpful documentation.
+
+**Activity:** Close the support tab of the browser.
+
+**A:** Hold up a Red sticky note if you are not looking at the dashboard!
+
+Between the two drop downs NeCTAR have placed a new item titled "Support Ticket". This is
+where you should go if you need help.
+
+**Activity:** Get everyone to click on the "Support Ticket" link of the top bar of the dashboard.
+
+This is an important link if you want to reach out and get help!
+
+The dialogue brought up has a search option. This allows you to try to find the answer to your problem
+yourself before you reach out by completing the form.
+
+-- *Slide* --
+
+## Question
+
+Try searching the knowledge base for "allocation".
+
+What does an approved allocation request become?
+
+1. a tenancy
+1. a project
+1. a collaboration
+1. an empire
+1. a task
+
+-- *Slide End* --
+
+**Answer: B**
+
+Once you've done a search, if you still need help, just complete the fields in the dialog and 
+submit your support request.
+
+The one "gotcha" is the **default email address is the one shown in the dashboard settings drop down**. 
+
+If you want responses to go to a different address, change it!
+
+To close the dialogue without sending anything just click on the dashboard behind it.
+
+**Activity:** Get people to close the dialog and return to the dashboard.
 
 -- *Slide* --
 
