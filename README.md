@@ -65,6 +65,7 @@ what has just been done.
 #### Must do
 
 1. [ ] Work through what the prerequisites are and how to deal with them.
+1. [ ] Make sure all the required props are ready.
 
 #### Nice to have
 
@@ -87,3 +88,8 @@ This seems to be rather random, and depends on the user. We need to dig further 
 We are just going to have to get people like this to pair up with others: the only other way to handle this is
 to create a special tenancy for the lesson, and then to add people like this to it...
 
+Alternatives to CyWin
+
+http://cmder.net/
+http://mobaxterm.mobatek.net/
+http://www.chiark.greenend.org.uk/~sgtatham/putty/
