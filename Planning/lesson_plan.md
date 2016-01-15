@@ -45,7 +45,7 @@ Upgrade and update your instance
 
 Where to go from here…
 
-* Allocations
+* ✓ Allocations
 * The full course
 * NeCTAR’s online training.
     

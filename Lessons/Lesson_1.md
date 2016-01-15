@@ -640,6 +640,38 @@ To close the dialogue without sending anything just click on the dashboard behin
 
 -- *Slide* --
 
+## Allocations
+
+Can you all find the Allocations tab?
+
+-- *Slide End* --
+
+Please hold up a Red sticky note if you need help
+and a Green one once you have found it.
+
+*Allocations* is an important tab: Remember, once you’ve exhausted your trial project, this is where you come. 
+It’s basically an online form that allows you to apply for a project with enough resources to support your research.  
+
+-- *Slide* --
+
+## Extend trial project
+
+Is there an option to convert your trial project on the allocation form?
+
+Hold up a 
+
+* Red sticky note for "No"
+* Green sticky note for "Yes"
+
+-- *Slide End* --
+
+Again, the greens have it.
+
+You can also request to have your  project/tenant extended. 
+You do this by selecting the "Convert project trial" option when filling in the allocation request form.
+
+-- *Slide* --
+
 You can think of the Dashboard we've just explored as the cockpit/drivers seat for an entire Data Centre - <br /> 
 BUT it is a car/plane you can crash!!! <br />
 And we *want* you to crash it and restart it regularly...<br />
