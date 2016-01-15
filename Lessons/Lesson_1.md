@@ -332,6 +332,8 @@ software on it?
 Hold up a Red sticky note if you say "No".
 and a Green one if you think that, somehow, somewhere, there is hope for her.
 
+-- *Slide End* --
+
 **A** The Greens have it: there's always hope!
 
 In the old days, because computing was so expensive, many people would share a single computer by means of terminals. 
@@ -375,7 +377,11 @@ Which is why you've been seeing the `ssh` references in the security groups.
 
 Which needs key pairs to work. 
 
+-- *Slide* --
+
 # Key Pairs
+
+-- *Slide End* --
 
 "What's a key pair?" I hear you not ask.
 
@@ -447,9 +453,101 @@ and a Green one if the answer is "Yes".
 
 **A:** No, the chances are extremely high that you've lost your machine for good.
 
+- - -
+
+SSH into the instance: should we see if we can use a web browser?
+
+- - -
+
+
+-- *Slide* --
+
+# The object store
+
+-- *Slide End* --
+
+The *Object Store* is an ideal replacement for the usb sticks that some people tend to carry 
+around with them: any file that you give it is backed up in at least triplicate. You can upload and download 
+files from any browser: and you can share the files with the world.
+ 
+On top of that, any file that you give it is backed up in triplicate, and each of the the copies is monitored for 
+degradation.
+
+Any bit rot, and the faulty file is replaced with a good copy. 
+
+You can upload and download files via your browser: and you can share them with the world. 
+Some people publish whole websites from the object store!
+
+-- *Slide* --
+
+## The object store
+
+On the NeCTAR dashboard what's its child tab called?
+
+1. Directories
+1. Loading
+1. Containers
+1. Boxes 
+
+-- *Slide End* --
+
+Please hold up a Red sticky note if you need help finding it
+Otherwise, hold up your answer...
+
+**A:** C: Containers.
+
+There is some terminology that you need to know.
+
+Files are called objects. Unsurprisingly, since it's called the objectore.
+ 
+And objects go into containers.
+
+And this tab is where you create containers, and then put files (or objects) into the containers.
+
+It is a very, very simple interface. So simple it's actualy clunky IMHO. 
 
 
 
+>  (demonstrate making the container public, and viewing the image in a browser)
+
+Now for a challenge.
+
+-- *Slide* --
+
+## Save an image to the object store
+
+Can you create a container named **resbaz 2016**
+in the Object Store and upload a picture to it? 
+
+**NB:** preserve the file extension as you name the object.
+
+Once your done, can you delete it all?
+
+-- *Slide End* --
+
+Please hold up a Red sticky note if you need help
+and a Green one once you are done.
+
+-- *Slide* --
+
+## Share an image
+
+<div align="left">
+▢ Create a container <br/>
+▢ Upload a picture into it <br/>
+▢ Can you make it public? <br/>
+▢ Click on the resultant public link <br/>
+▢ Append '/' and the object name to the browser address <br/>
+▢ Do you see the image on your browser? <br/>
+</div>
+
+-- *Slide End* --
+
+
+Please hold up a Red sticky note if you need help
+and a Green one once you are done.
+
+You now have a public handle that you can share with the world!
 
 -- *Slide* --
 

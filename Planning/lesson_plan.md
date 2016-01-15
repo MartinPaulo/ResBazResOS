@@ -39,7 +39,7 @@ Ssh into your instance
 
 Upgrade and update your instance
 
-The Object Store: your free USB on the cloud (ditch if time is an issue?)
+✓ The Object Store: your free USB on the cloud (ditch if time is an issue?)
 
 How to get help on the cloud
 
