@@ -66,7 +66,6 @@ what has just been done.
 
 1. [ ] Work through what the prerequisites are and how to deal with them.
 1. [ ] Make sure all the required props are ready.
-1. [ ] Add creative commons licence to Basic checklist.
 1. [ ] Add "can copy and paste" to the post creation tab of the proper launch VM script
 
 #### Nice to have
