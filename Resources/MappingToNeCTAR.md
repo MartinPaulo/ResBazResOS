@@ -14,6 +14,11 @@
 
 * http://training.nectar.org.au/package07/sections/launching.html
 
+### The Object Store
+
+* http://training.nectar.org.au/package06/sections/objectStorage.html
+* http://training.nectar.org.au/package07/sections/objectStorage.html
+
 ### Connecting via ssh
 
 * http://training.nectar.org.au/package07/sections/connectViaSSH.html
@@ -21,11 +26,6 @@
 ### apt-get and apt-update
 
 * http://training.nectar.org.au/package07/sections/firstSSHCommands.html
-
-### The Object Store
-
-* http://training.nectar.org.au/package06/sections/objectStorage.html
-* http://training.nectar.org.au/package07/sections/objectStorage.html
 
 ### Allocation Requests
 

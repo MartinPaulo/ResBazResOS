@@ -12,7 +12,7 @@ your tour guide is ...
 
 -- *Slide* --
 
-## A line infection checklist
+## This is a... ?
 
 <div align="left">
 ▢ wash hands with soap, <br/>
@@ -26,12 +26,24 @@ your tour guide is ...
 
 **Question:** Does anyone know what this is?
 
+-- *Slide* --
+
+## A line infection checklist
+
+<div align="left">
+▢ wash hands with soap, <br/>
+▢ clean the patient’s skin with chlorhexidine antiseptic, <br/>
+▢ put sterile drapes over the entire patient, <br/>
+▢ put on a sterile mask, hat, gown, and gloves, <br/>
+▢ put a sterile dressing over the catheter site once the line is in
+</div>
+
+-- *Slide End* --
+
 **Answer:** In 2001 a critical-care specialist at John Hopkins Hospital designed a checklist to prevent line 
 infections. This is it!
 
-So why are you being shown a line infection checklist on a session about the research cloud?
-
-Well, the line infection steps have been known and taught for years. But frustratingly line infections still
+Line infection steps have been known and taught for years. But frustratingly line infections still
 happen. So the specialist gave this checklist to nurses and then asked them to observe the doctors for a 
 month as they put lines into patients, and record how often they completed each step. 
 
@@ -41,16 +53,27 @@ The specialist then asked the nurses stop the doctors whenever a step was skippe
 
 The ten-day line-infection rate went from eleven per cent to zero. 
 
+So why are you being shown a line infection checklist on a session about the research cloud?
+
 This story inspired a software company to introduce a checklist for deploying applications into production.
 
 The rate of problems encountered during deployment fell to zero.
 
 So with that in mind we've prepared some checklists for you use to launch your free PC's on the Research Cloud. 
 
-    Now stop, and ask the audience to introduce themselves to the person on either side of them (if they don't
-    know that person). Then let them know that these are the people that they will turn to first for help if they
-    have any problems with the lesson. They are only to put up red cards if neither person on either side can't 
-    help them. So if a read card goes up, you are expecting to see a row of red cards!
+    Now stop, and ask the audience to pair up. 
+    
+    Then let them know that their pair is the people person they will turn to first for help if they
+    have any problems with the lesson. They are only to put up red cards if both people are stuck. 
+
+-- *Slide* --
+
+## Sticky note usage
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+-- *Slide End* --
 
 -- *Slide* --
 
@@ -60,10 +83,10 @@ Use following checklist to launch an instance!
 
 http://tinyurl.com/launch-pdf
 
--- *Slide End* --
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
 
-Please hold up a Red sticky note if you need help
-and a Green one once you are done.
+-- *Slide End* --
 
 -- *Slide* --
 
@@ -77,7 +100,14 @@ worth of time if you run the largest computer you are allowed to on it all the t
 So you've just launched a platform to publish your kitten research to the world using your trial project.
 
 A project is really just a way to group people together and to set constraints on what operations they can do on 
-the Research Cloud.
+the Research Cloud. You can belong to more than one. 
+
+**NB** Demonstrate the project drop down to show that this is where you switch between projects. Call it the "project
+drop down. Note that if this is your first time on the cloud you should only have one project. 
+
+Ask anyone who has more than one project to hold up a red sticky note. You are hoping to see none...
+Talk to them about what other projects are in their dashboard.
+There is a strong possibility they might have exhausted their trial project...
 
 If you only use your smallest computer for short periods of time, and **terminate** them religiously after 
 each run, your trial project will last far longer. 
@@ -112,10 +142,10 @@ asking for allocation extensions paperwork.
 Can you work out how to terminate your free computer? 
 Test your discovery by terminating the one you've just started.
 
--- *Slide End* --
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
 
-Please hold up a Red sticky note if you need help
-and a Green one once you are done.
+-- *Slide End* --
 
 -- *Slide* --
 
@@ -173,9 +203,14 @@ But before you go rushing to the Research Cloud, you have to understand that the
 is a not quite the same as dedicated computer on your desktop! 
 
 What we are going to do today is to give you enough information to get your own machines up and running on the 
-Research Cloud, and importanly, where to go to learn the gotcha’s.
+Research Cloud, and importantly, where to go to learn the gotcha’s.
+
+-- *Slide* --
 
 ## Security Groups
+
+-- *Slide End* --
+
 
 One of the things you needed to do in launching your free PC was to select a security group called 'http'.
 
@@ -189,12 +224,16 @@ A security group is a set of rules used to create a firewall for your computer i
 
 1. A wall used to prevent the spread of fire
 1. An attractive wall made from fire
-1. Something that blocks or allows network traffic
-1. What's built on top of an ice foundation
+1. Something that selects what network traffic that can pass
+1. That what's built on top of an ice foundation
 
 -- *Slide End* --
 
 **Answer A and C**
+
+Naturally, on the the Research Cloud a security group selects what network traffic that can pass.
+
+    Try to draw the following on a white board as you talk...
 
 How firewalls work is that network messages destined for a computer are broken up into packets. Once a packet
 reaches a computer how does the computer know which application the packet is intended for? 
@@ -242,13 +281,10 @@ Create a Security Group with the help of the security group checklist
 
 http://tinyurl.com/creating-a-security-group
 
-*Tip:* Preface the security group name with an "sg_" so that you know that
-its a security group when you see the name...
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
 
 -- *Slide End* --
-
-Please hold up a Red sticky note if you need help
-and a Green one once you are done.
 
 **NB** The same security group can be applied to many computers in your project.
 
@@ -320,7 +356,14 @@ Secure Shell. We'll cover it shortly. Patience!
 
 -- *Slide End* --
 
-Classless Internet Domain Routing, a snazzy way of specifying a range of internet addresses in one fell swoop.
+Classless Internet Domain Routing, a snazzy name for a way of specifying a range of internet addresses in 
+one fell swoop.
+
+- - - 
+
+30 minutes to here
+ 
+- - -
 
 ## The Terminal 
 
@@ -329,8 +372,8 @@ Classless Internet Domain Routing, a snazzy way of specifying a range of interne
 Your free PC on the cloud has no keyboard, monitor or mouse. Do you have any hope of installing or removing
 software on it?
 
-Hold up a Red sticky note if you say "No".
-and a Green one if you think that, somehow, somewhere, there is hope for her.
+* <span style="color:red">&#9632;</span> = No, doom and gloom!
+* <span style="color:green">&#9632;</span> = Somehow, somewhere, there is hope!
 
 -- *Slide End* --
 
@@ -365,6 +408,8 @@ ssh
 
 -- *Slide End* --
 
+    Try to draw the following on a white board as you talk...
+
 It connects a terminal on one machine to another target machine, thus allowing 
 you to use the text based interface on the target machine. It kind of teleports 
 the target machine terminal to yours…
@@ -384,6 +429,9 @@ Which needs key pairs to work.
 -- *Slide End* --
 
 "What's a key pair?" I hear you not ask.
+
+    Could the following also be demonstrated through a box and a lock?
+    Or a paint video?
 
 Ok way back when, in the olden days, say when Greece ruled the known universe, and say you were a wealthy merchant 
 named Pem, lets agree that I borrowed a lot of money from you and then relocated to a remote city.
@@ -417,13 +465,10 @@ Create a Keypair with the help of the key pair checklist
 
 http://tinyurl.com/creating-a-keypair
 
-*Tip:* Preface the security group name with an "kp_" so that you know that
-its part of a keypair when you see the name...
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
 
 -- *Slide End* --
-
-Please hold up a Red sticky note if you need help
-and a Green one once you are done.
 
 Ok: so now you have created a key pair and a security group. Let's use them to fire up a new free pc on the 
 Research cloud:
@@ -435,11 +480,11 @@ Research cloud:
 Use the launch an instance checklist to launch an instance.
 
 http://tinyurl.com/starting-an-instance
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
  
 -- *Slide End* --
-
-Please hold up a Red sticky note if you need help
-and a Green one once you are done.
 
 -- *Slide* --
 
@@ -453,7 +498,12 @@ and a Green one if the answer is "Yes".
 
 **A:** No, the chances are extremely high that you've lost your machine for good.
 
+- - - 
+
+45 minutes to here
+ 
 - - -
+
 
 SSH into the instance: should we see if we can use a web browser?
 
@@ -658,10 +708,8 @@ It’s basically an online form that allows you to apply for a project with enou
 
 Is there an option to convert your trial project on the allocation form?
 
-Hold up a 
-
-* Red sticky note for "No"
-* Green sticky note for "Yes"
+* <span style="color:red">&#9632;</span> = No!
+* <span style="color:green">&#9632;</span> = Yes, I can see it.
 
 -- *Slide End* --
 
