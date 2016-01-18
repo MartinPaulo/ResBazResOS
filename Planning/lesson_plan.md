@@ -49,7 +49,7 @@ Where to go from here…
 * The full course
 * NeCTAR’s online training.
     
-Kill your PC!
+✓ Kill your PC!
 
 The where to go from here will be a plug for the full course. Also to provide links to the NeCTAR online 
 training I’ve now sat through.  I thought that the online training could be a page/pdf of links on the drupal 

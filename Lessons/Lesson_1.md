@@ -764,6 +764,36 @@ You do this by selecting the "Convert project trial" option when filling in the 
 
 -- *Slide* --
 
+## Terminate your free computer!
+
+Check to see if you have any computers running (Compute-Instances).
+
+If so, terminate them.
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+-- *Slide End* --
+
+
+-- *Slide* --
+
+## Question
+
+Why did we terminate our computers?
+
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. All of the above
+
+-- *Slide End* --
+
+**Answer:** The E's have it!
+
+-- *Slide* --
+
 You can think of the Dashboard we've just explored as the drivers seat for an entire Data Centre <br /> 
 BUT it is a car you can crash! <br />
 And we *want* you to crash it and restart it regularly...<br />
