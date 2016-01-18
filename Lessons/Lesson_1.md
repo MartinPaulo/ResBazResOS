@@ -377,7 +377,7 @@ software on it?
 
 -- *Slide End* --
 
-**A** The Greens have it: there's always hope!
+**Answer:** The Greens have it: there's always hope!
 
 In the old days, because computing was so expensive, many people would share a single computer by means of terminals. 
 A terminal was a keyboard and a screen, and many terminals could be attached to a single computer.
@@ -518,16 +518,15 @@ SSH into the instance: should we see if we can use a web browser?
 -- *Slide End* --
 
 The *Object Store* is an ideal replacement for the usb sticks that some people tend to carry 
-around with them: any file that you give it is backed up in at least triplicate. You can upload and download 
-files from any browser: and you can share the files with the world.
+around with them: You can upload and download files to it from any browser: and you can keep those files private,
+or share those files with the world if you want.
+
+Some people even publish whole websites from the object store!
  
 On top of that, any file that you give it is backed up in triplicate, and each of the the copies is monitored for 
 degradation.
 
 Any bit rot, and the faulty file is replaced with a good copy. 
-
-You can upload and download files via your browser: and you can share them with the world. 
-Some people publish whole websites from the object store!
 
 -- *Slide* --
 
@@ -555,11 +554,7 @@ And objects go into containers.
 
 And this tab is where you create containers, and then put files (or objects) into the containers.
 
-It is a very, very simple interface. So simple it's actualy clunky IMHO. 
-
-
-
->  (demonstrate making the container public, and viewing the image in a browser)
+It is a very, very simple interface. So simple it's actually clunky IMHO. 
 
 Now for a challenge.
 
@@ -584,12 +579,13 @@ and a Green one once you are done.
 ## Share an image
 
 <div align="left">
-▢ Create a container <br/>
+▢ Create a container (make it public)<br/>
 ▢ Upload a picture into it <br/>
-▢ Can you make it public? <br/>
 ▢ Click on the resultant public link <br/>
 ▢ Append '/' and the object name to the browser address <br/>
 ▢ Do you see the image on your browser? <br/>
+▢ Can you make it private? <br/>
+▢ Can you still see the image in your browser? <br/>
 </div>
 
 -- *Slide End* --
@@ -597,11 +593,33 @@ and a Green one once you are done.
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
 
-You now have a public handle that you can share with the world!
+-- *Slide* --
+
+You mark a container as being public.
+
+Which of the following are affected:
+
+1. Just the first file in the container
+1. None of the files in the container
+1. The mittens of celestial kittens
+1. All of the files in the container
+1. The last file in the container
+
+?
+
+-- *Slide End* --
+
+**Answer:** D: all of the files in the container. So you need to use this feature with care!
+
+- - - 
+
+15 Object Store is 10 -15 minutes.
+ 
+- - -
 
 -- *Slide* --
 
-## Settings drop down
+## The settings drop down
 
 -- *Slide End* --
 
@@ -609,15 +627,18 @@ The drop down on the right is the settings drop down. It’s not exactly the mos
 
 If you select it, you’ll see that there are three options: "Settings", "Help" and "Sign Out".
 
-### The Help Menu
+-- *Slide* --
 
-**Activity:** Get everyone to select "help" on the settings drop down.
+## The Help Menu
 
-**Q:** Are you all looking at the dashboard - or at something else?
+Select "help" on the settings drop down.
 
-**A:** Hold up a Red sticky note if you are still looking at the dashboard!
+* <span style="color:red">&#9632;</span> = I'm still looking at the dashboard.
+* <span style="color:green">&#9632;</span> = Another web page has opened!
+
+-- *Slide End* --
        
-A new tab has opened, taking you to the homepage of the Research Cloud support site. 
+Hopefully a new tab has opened, taking you to the homepage of the Research Cloud support site. 
 
 The support site has loads of useful documentation. It has beginners guides, online training,
 and knowledge bases.
@@ -646,16 +667,38 @@ Is it:
 The support site is well worth exploring. But we are not going to do it now.
 Remember, you now know where to go when you want to find helpful documentation.
 
+-- *Slide* --
+
+## Question
+
+Can you find the NeCTAR training site?
+
+Is its address in the browser:
+
+1. https://dashboard.rc.nectar.org.au
+1. https://support.nectar.org.au
+1. http://www.nectar.org.au/ 
+1. http://training.nectar.org.au/
+1. http://status.rc.nectar.org.au/
+
+-- *Slide End* --
+
+**Answer:**
+
+Those are all useful NeCTAR website addresses to know. Especially the status site.
+But the answer is D, http://training.nectar.org.au/
+
+This is where you can go once you return to your homes, and look to increase your understanding of
+the Research cloud, the home of your free computer and usb stick!
+
 **Activity:** Close the support tab of the browser.
 
 **A:** Hold up a Red sticky note if you are not looking at the dashboard!
 
-Between the two drop downs NeCTAR have placed a new item titled "Support Ticket". This is
-where you should go if you need help.
+Between the two drop downs NeCTAR have placed an item titled "Support Ticket". This is
+where you should first turn if you need help.
 
 **Activity:** Get everyone to click on the "Support Ticket" link of the top bar of the dashboard.
-
-This is an important link if you want to reach out and get help!
 
 The dialogue brought up has a search option. This allows you to try to find the answer to your problem
 yourself before you reach out by completing the form.
@@ -695,10 +738,10 @@ To close the dialogue without sending anything just click on the dashboard behin
 
 Can you all find the Allocations tab?
 
--- *Slide End* --
+* <span style="color:red">&#9632;</span> = No...
+* <span style="color:green">&#9632;</span> = Yes!
 
-Please hold up a Red sticky note if you need help
-and a Green one once you have found it.
+-- *Slide End* --
 
 *Allocations* is an important tab: Remember, once you’ve exhausted your trial project, this is where you come. 
 It’s basically an online form that allows you to apply for a project with enough resources to support your research.  
@@ -721,10 +764,12 @@ You do this by selecting the "Convert project trial" option when filling in the 
 
 -- *Slide* --
 
-You can think of the Dashboard we've just explored as the cockpit/drivers seat for an entire Data Centre - <br /> 
-BUT it is a car/plane you can crash!!! <br />
+You can think of the Dashboard we've just explored as the drivers seat for an entire Data Centre <br /> 
+BUT it is a car you can crash! <br />
 And we *want* you to crash it and restart it regularly...<br />
-\#failfast!
+**\#failfast**!
+
+## Thank you
 
 -- *Slide End* --
 
