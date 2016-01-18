@@ -491,8 +491,8 @@ http://tinyurl.com/starting-an-instance
 You fire up your machine. Days later, you realise that you’ve lost your private key. Will you ever be able to 
 access and control your machine from that point onward?
 
-Please hold up a Red sticky note if the answer is "No" 
-and a Green one if the answer is "Yes".
+* <span style="color:red">&#9632;</span> = No, not without a world of pain!
+* <span style="color:green">&#9632;</span> = Easily!
 
 -- *Slide End* --
 
@@ -504,6 +504,7 @@ and a Green one if the answer is "Yes".
  
 - - -
 
+Discuss the apt-get command
 
 SSH into the instance: should we see if we can use a web browser?
 
