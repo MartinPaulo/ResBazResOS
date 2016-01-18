@@ -94,3 +94,5 @@ Alternatives to CyWin
 http://cmder.net/
 http://mobaxterm.mobatek.net/
 http://www.chiark.greenend.org.uk/~sgtatham/putty/
+http://babun.github.io/
+https://git-for-windows.github.io/
