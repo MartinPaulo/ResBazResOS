@@ -89,6 +89,8 @@ This seems to be rather random, and depends on the user. We need to dig further 
 We are just going to have to get people like this to pair up with others: the only other way to handle this is
 to create a special tenancy for the lesson, and then to add people like this to it...
 
+Should we use the paint video to explain keys? https://www.youtube.com/watch?v=YEBfamv-_do
+
 Alternatives to CyWin
 
 http://cmder.net/

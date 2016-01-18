@@ -802,5 +802,3 @@ And we *want* you to crash it and restart it regularly...<br />
 ## Thank you
 
 -- *Slide End* --
-
-https://www.youtube.com/watch?v=YEBfamv-_do
