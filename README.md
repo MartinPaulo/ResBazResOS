@@ -72,17 +72,18 @@ what has just been done.
 
 1. [ ] Can we have some sort of shell in place via DIT4C that will allow ssh without people having to install
        anything?
-1. [ ] We should showcase Intersect's [Launchpod](https://launchpod.intersect.org.au/)? 
 
 ## Notes
 
-    Tim: I haven't done anything yet, so why am I learning about allocations?
-    Fixed by moving to end of lesson.
+Fiona: Can there be some more rationale - what is this going to let me do? Refer back to the applications/benefits
+more often
 
-    Fiona: Can there be some more rationale - what is this going to let me do? 
-    Refer back to the applications/ benefits more often
-
-    Tim: I wasn't able to use my pt account to create a new instance because it had already exceeded its quota.
+We could showcase Intersect's [Launchpod](https://launchpod.intersect.org.au/)? However I can't use it because of
+Intersect defect 
+[INC0012566](https://intersect.service-now.com/ess/Incident+Information.do?sysparm_document_key=incident,f61198d06fc15600cb82c6168d3ee4c8)
+(my aaf email is different to my NeCTAR user id)
+    
+Tim: I wasn't able to use my pt account to create a new instance because it had already exceeded its quota.
 
 We are just going to have to get people like this to pair up with others: the only other way to handle this is
 to create a special tenancy for the lesson, and then to add people like this to it on the fly...
