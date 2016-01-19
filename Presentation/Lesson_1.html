@@ -271,6 +271,171 @@ access and control your machine from that point onward?
 </script></section>
 <section data-markdown><script type="text/template">
 
+## Customization Script?
+
+```bash
+#!/bin/bash -v
+
+apt-get update && apt-get -y upgrade
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## ssh
+
+```bash
+ssh  -i <key> <user>@<address>
+```
+
+Eg: Along the lines of:
+
+```bash
+ssh -i tut_dev.pem ubuntu@144.6.225.224
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+**Exercise**
+
+## Connect to your remote instance via ssh. E.G.:
+
+```bash
+ssh -i tut_dev.pem ubuntu@144.6.225.224
+```
+
+### PS: Windows users... 
+
+To find your key file, 
+prefix `/cygdrive/c/` to the directory 
+that you saved your key file in...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## When you are asked:
+
+```bash
+The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
+RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
+Are you sure you want to continue connecting (yes/no)?
+```
+
+simply type "yes".
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Is this your error message?
+
+```bash
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0777 for '.ssh/tut_dev.pem' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+bad permissions: ignore key: .ssh/nectar_dev.pem
+ubuntu@144.6.225.224's password: 
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+This works for me:
+
+```bash
+chmod u=rw,go-rwx keys/tut_dev.pem 
+```
+
+Modify the permissions on your key file so that only you can read or write it.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Does this look familiar?
+
+```bash
+Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-36-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+Last login: Mon Mar 30 01:27:13 2015 from hqrouter.vpac.org
+ubuntu@drupal:~$ 
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+Finally, we are going try and update our web server. Try to execute the first command in the set:
+
+```bash
+apt-get update
+```
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Help!
+
+Again, something has gone wrong! You should be met with the message:
+
+```bash
+E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
+the security privileges of the super user.
+
+Try to execute the command again, this time with `sudo`:
+
+```bash
+sudo apt-get update
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+```bash
+sudo apt-get upgrade
+```
+
+If your system has software on it that needs an upgrade you will be met by a request to perform the upgrade. Something
+like:
+
+```bash
+After this operation, 4,096 B of additional disk space will be used.
+Do you want to continue? [Y/n]
+```
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Exercise
+
+Type `exit`
+
+You should see the following:
+
+```bash
+logout
+Connection to <some_ip_number> closed
+```
+</script></section>
+<section data-markdown><script type="text/template">
+
 # The object store
 
 </script></section>

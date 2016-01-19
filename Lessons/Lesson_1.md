@@ -361,7 +361,7 @@ one fell swoop.
 
 - - - 
 
-30 minutes to here
+**30 minutes to here**
  
 - - -
 
@@ -500,15 +500,297 @@ access and control your machine from that point onward?
 
 - - - 
 
-45 minutes to here
+**45 minutes to here**
  
 - - -
 
-Discuss the apt-get command
+-- *Slide* --
 
-SSH into the instance: should we see if we can use a web browser?
+## Customization Script?
 
-- - -
+```bash
+#!/bin/bash -v
+
+apt-get update && apt-get -y upgrade
+```
+
+-- *Slide End* --
+
+The second time we launched a machine we put this "Customization Script" into the post creation tab. 
+
+We were asking for this command set to be run on our PC in the cloud once it had started.
+
+`apt-get` is the front end for a program called a package manager. Its rather like the appstore on your phone, and
+allows you to add, remove, and upgrade applications. So we were asking for all the applications to be brought up to
+date after the pc had started. This means that all the fixes and security releases since the image was created
+are applied. 
+
+And now with the magic of `ssh` we are going to run the same command again on our computer in the cloud.
+
+This is the basic form our `ssh` command will take:
+
+-- *Slide* --
+
+## ssh
+
+```bash
+ssh  -i <key> <user>@<address>
+```
+
+Eg: Along the lines of:
+
+```bash
+ssh -i tut_dev.pem ubuntu@144.6.225.224
+```
+
+-- *Slide End* --
+
+So here:
+
+* the `key` is the path to and the key file itself
+* the `user` is the name of the user account on the remote machine that we are connecting as.  
+  Different operating systems have different default user accounts.
+* the `address` is the IP address of the Virtual Machine that we read off of the dashboard.
+
+
+-- *Slide* --
+
+**Exercise**
+
+## Connect to your remote instance via ssh. E.G.:
+
+```bash
+ssh -i tut_dev.pem ubuntu@144.6.225.224
+```
+
+### PS: Windows users... 
+
+To find your key file, 
+prefix `/cygdrive/c/` to the directory 
+that you saved your key file in...
+
+-- *Slide End* --
+
+If everyone could try to connect to their server using the ssh command, that would be wonderful.
+
+-- *Slide* --
+
+## When you are asked:
+
+```bash
+The authenticity of host '144.6.225.224 (144.6.225.224)' can't be established.
+RSA key fingerprint is d8:14:f5:85:5f:52:cb:f2:53:56:9d:b3:0c:1e:a3:1f.
+Are you sure you want to continue connecting (yes/no)?
+```
+
+simply type "yes".
+
+-- *Slide End* --
+
+BTW, I'm hoping that you all fail - with an error message!
+ 
+Hold up a Green card when you've reached this error message.
+And a Red card if you need help
+
+-- *Slide* --
+
+## Is this your error message?
+
+```bash
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0777 for '.ssh/tut_dev.pem' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+bad permissions: ignore key: .ssh/nectar_dev.pem
+ubuntu@144.6.225.224's password: 
+```
+
+-- *Slide End* --
+
+Hold up a Green card when you've reached this error message.
+And a Red card if you need help.
+
+What's going on here? Anyone want to hazard an explanation?
+
+The error message is very descriptive. ```ssh``` is rejecting your key file because anyone who has access to your
+machine can read it. You need to tighten up the permissions on this file so that only you can access it.
+
+Hit control-c to exit the password prompt.
+
+This is where `chmod` comes to the rescue!
+
+In my case, allowing me (the current **u**ser) to be able to **r**ead and **w**rite the file, and to exclude the 
+**g**roup and **o**thers from being able to **r**ead, **w**rite or try to run (e**x**ecute) it, the command would be:
+
+-- *Slide* --
+
+## Exercise
+
+This works for me:
+
+```bash
+chmod u=rw,go-rwx keys/tut_dev.pem 
+```
+
+Modify the permissions on your key file so that only you can read or write it.
+
+-- *Slide End* --
+
+Then issue the `pwd` command to see what directory you are in.
+
+Retry the ssh command.
+
+Hopefully, you are now met with something along following lines
+
+-- *Slide* --
+
+## Does this look familiar?
+
+```bash
+Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-36-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+Last login: Mon Mar 30 01:27:13 2015 from hqrouter.vpac.org
+ubuntu@drupal:~$ 
+```
+
+-- *Slide End* --
+
+-- *Slide* --
+
+## Exercise
+
+Finally, we are going try and update our web server. Try to execute the first command in the set:
+
+```bash
+apt-get update
+```
+-- *Slide End* --
+
+-- *Slide* --
+
+## Help!
+
+Again, something has gone wrong! You should be met with the message:
+
+```bash
+E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+```
+
+-- *Slide End* --
+
+Hold up a Green card when you've reached this error message.
+And a Red card if you need help.
+
+You are seeing this error because you are trying to perform system administration, and the ubuntu user you signed in 
+as is not the super user normally allowed to do system administration.
+
+But don't panic!
+
+-- *Slide* --
+
+## Exercise
+
+The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
+the security privileges of the super user.
+
+Try to execute the command again, this time with `sudo`:
+
+```bash
+sudo apt-get update
+```
+
+-- *Slide End* --
+
+You should now see a whole lot of gets scrolling by, as the operating system updates its lists of installed and 
+available software.
+
+Once done, execute the command:
+
+-- *Slide* --
+
+## Exercise
+
+```bash
+sudo apt-get upgrade
+```
+
+If your system has software on it that needs an upgrade you will be met by a request to perform the upgrade. Something
+like:
+
+```bash
+After this operation, 4,096 B of additional disk space will be used.
+Do you want to continue? [Y/n]
+```
+-- *Slide End* --
+
+In this case, reply, 'Y'.
+
+Hold up a Green card when you've done this.
+And a Red card if you need help.
+
+Now we've replicated the steps Anna had to undertake in order to run the upgrade on her machine.
+
+`apt-get` is the front end for a program called a package manager. Its rather like the appstore on your phone, and
+allows you to add, remove, and upgrade applications.
+
+When you are finished working on your virtual machine, do the following:
+
+-- *Slide* --
+
+## Exercise
+
+Type `exit`
+
+You should see the following:
+
+```bash
+logout
+Connection to <some_ip_number> closed
+```
+-- *Slide End* --
+
+You have now closed the ssh connection to the remote machine. If you are not convinced, type `pwd` to see that your
+terminal is now back on your local machine. The teleportation magic is over!
+
+Hold up a Green card if you are back on your local machine.
+And a Red card if you are not.
+
+**Exercise**
+
+Return to the security group in the dashboard and remove the ssh rule.
+
+Now try to ssh into your virtual machine again.
+
+What happens?
+
+Hold up a Green card if you have managed to teleport into your remote machine..
+And a Red card if you haven't.
+
+I'm hoping to see a sea of Red!
+
+**Exercise**
+
+Now return to the security group and re-add a rule that allows ssh.
+
+Try to ssh into your virtual machine again.
+
+What happens?
+
+Hold up a Green card if you have managed to teleport into your remote machine..
+And a Red card if you haven't.
+
+I'm hoping to see a sea of Green!
+
+The takeaway: Security groups can stop you from accessing your server if they aren't configured properly. 
+
+It is a good idea to remove the ssh rule from the security group when you don't kneed it. This stops hackers from 
+trying to access your machine.
 
 
 -- *Slide* --
