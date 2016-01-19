@@ -77,24 +77,71 @@ what has just been done.
 ## Notes
 
     Tim: I haven't done anything yet, so why am I learning about allocations?
+    Fixed by moving to end of lesson.
 
     Fiona: Can there be some more rationale - what is this going to let me do? 
     Refer back to the applications/ benefits more often
-    Bernard: No rules appeared when I created a new security group
-    
-This seems to be rather random, and depends on the user. We need to dig further and find out what NeCTAR are doing here.
 
     Tim: I wasn't able to use my pt account to create a new instance because it had already exceeded its quota.
 
 We are just going to have to get people like this to pair up with others: the only other way to handle this is
-to create a special tenancy for the lesson, and then to add people like this to it...
+to create a special tenancy for the lesson, and then to add people like this to it on the fly...
 
 Should we use the paint video to explain keys? https://www.youtube.com/watch?v=YEBfamv-_do
 
-Alternatives to CyWin
+## Window shells
 
-http://cmder.net/
-http://mobaxterm.mobatek.net/
-http://www.chiark.greenend.org.uk/~sgtatham/putty/
-http://babun.github.io/
-https://git-for-windows.github.io/
+### [Git Bash](https://git-for-windows.github.io/)
+
+Has ssh, but I can't get it to ssh into a vm?
+
+This is because it is hard wired to use id_rsa as its key choice. See the following
+[Stack Overflow](http://stackoverflow.com/questions/17383177/permission-denied-publickey-errors-on-windows-when-using-moovweb)
+bug.
+
+Advantage is that it opens its default shell into the users home windows directory.
+Disadvantage is that the user is limited to one key.
+
+### [Moba XTerm](http://mobaxterm.mobatek.net/)
+
+Worked flawlessly: but very different experience to regular osx shell. \
+
+Disadvantage is that it requires two different lesson streams on the setup instructions.
+
+### [Babun](http://babun.github.io/)
+
+Worked flawlessly.
+
+A wrapper around cygwin
+
+Disadvantage is the bizarro /cygdrive/c/Users/IEUser/ dance to get to the users home directory.
+
+Disadvantage is that it ignores file permissions [by design](https://github.com/babun/babun/issues/457).
+Remove the '`noacl`' flag from `/etc/fstab` fixes this.
+
+### [Cmder](http://cmder.net/)
+
+Worked flawlessly.
+
+Disadvantage is that it took forever to unzip (could be the virtual machine disk growing), and that lots
+of security advisories popped up...
+
+Disadvantage is that it ignores file permissions.
+
+### [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
+
+Worked flawlessly.
+
+Downside is as for MobaXTerm: a different experience to the osx shell, hence two different lesson streams.
+
+### [Cygwin](https://cygwin.com/)
+
+Worked flawlessly.
+
+Advantage is that it observes file permissions flawlessly
+
+Downside is the installer, and getting people to step through it in a hurry :(
+Disadvantage is the bizarro /cygdrive/c/Users/IEUser/ dance to get to the users home directory.
+
+
+
