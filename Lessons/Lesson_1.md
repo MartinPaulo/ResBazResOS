@@ -64,7 +64,7 @@ So with that in mind we've prepared some checklists for you use to launch your f
     Now stop, and ask the audience to pair up. 
     
     Then let them know that their pair is the people person they will turn to first for help if they
-    have any problems with the lesson. They are only to put up red cards if both people are stuck. 
+    have any problems with the lesson. They are only to put up red sticky notes if both people are stuck. 
 
 -- *Slide* --
 
@@ -95,22 +95,20 @@ http://tinyurl.com/launch-pdf
 -- *Slide End* --
 
 The first time you log on to the Research Cloud dashboard, you get given a **free** trial project, with three-months 
-worth of time if you run the largest computer you are allowed to on it all the time. 
+worth of cpu time if you run the largest computer you are allowed to on it all the time. 
 
 So you've just launched a platform to publish your kitten research to the world using your trial project.
 
-A project is really just a way to group people together and to set constraints on what operations they can do on 
-the Research Cloud. You can belong to more than one. 
+Easy, wasn't it?
+
+A project on the Research Cloud is just a way to group people together and to set constraints on what operations 
+they can do on the Research Cloud. You can belong to more than one project. 
 
 **NB** Demonstrate the project drop down to show that this is where you switch between projects. Call it the "project
 drop down. Note that if this is your first time on the cloud you should only have one project. 
 
-Ask anyone who has more than one project to hold up a red sticky note. You are hoping to see none...
-Talk to them about what other projects are in their dashboard.
-There is a strong possibility they might have exhausted their trial project...
-
-If you only use your smallest computer for short periods of time, and **terminate** them religiously after 
-each run, your trial project will last far longer. 
+If you only use the smallest computer for short periods of time on the Research Cloud, and **terminate** them
+religiously after each run, your trial project will last far longer. 
 
 When your trial project has expired you can still log in to the dashboard to view and request 
 a project allocation on the research cloud. You can even request to extend the duration of your
@@ -130,7 +128,7 @@ What's your trial project lifetime?
 
 -- *Slide End* --
 
-**Answer: C**
+**Answer: C** But it will be B if run your free computer(s) flat out!
 
 So always **terminate** your free computers once you've finished working with them. That way you can avoid the
 asking for allocation extensions paperwork.
@@ -161,8 +159,8 @@ But on the first run, they found that the machines couldn’t work with their da
 They were forced to iteratively spend money on upgrading those machines, until finally, one was able to perform the 
 required analysis. It had taken them 12 months from the date of purchase to get to this point.
 
-If, instead of purchasing hardware, they had turned to the cloud, they would have been able to have had their initial 
-machine running within minutes. 
+If, instead of purchasing hardware, they had turned to the cloud, just has you have now done, 
+they would have been able to have had their initial machine running within minutes. 
 
 If it was underpowered, they would have been able to upgrade it to a larger machine, again within a matter of minutes. 
 They probably wouldn’t even have had to re-install the software.  
@@ -233,7 +231,15 @@ A security group is a set of rules used to create a firewall for your computer i
 
 Naturally, on the the Research Cloud a security group selects what network traffic that can pass.
 
-    Try to draw the following on a white board as you talk...
+    Try to draw something like the following on a white board as you talk...
+
+    +-----------+    Network              +--------------+
+    |           |                         |              |
+    |           |  +--+  +--+  +--+  +-+  |              |
+    | Server    +--+22+--+22+--+30+--+1+->+     Client   |
+    |           |  +--+  +--+  +--+  +-+  |              |
+    |           |                         |              |
+    +-----------+                         +--------------+
 
 How firewalls work is that network messages destined for a computer are broken up into packets. Once a packet
 reaches a computer how does the computer know which application the packet is intended for? 
@@ -268,8 +274,8 @@ Your trial project comes with several pre-configured security groups. But if you
 you get no security group pre-configured for you. And what if you want to run an application that doesn't fit into
 the predefined ones? Simple. 
 
-You just have to define your own. And so that's what you'll do now. You are going to create a single security group
-that allows traffic to reach two applications.
+You just have to define your own security group. And so that's what you'll do now. 
+You are going to create a single security group that allows traffic to reach two applications.
 
 And of course we've created a checklist to guide you. This ones a little more formal.
 
@@ -291,8 +297,8 @@ http://tinyurl.com/creating-a-security-group
 **NB:** You can edit a security group at any time.  And the changes will immediately apply to all running virtual 
 machines that have that security group applied.
 
-**NB:** This also means that if you share security groups amongst VM’s, you have to be careful: if you change rules for 
-one server, you might inadvertently break another.
+**NB:** This also means that if you share security groups amongst computers, you have to be careful: 
+if you change rules for one server, you might inadvertently break another.
 
 -- *Slide* --
 
@@ -322,7 +328,7 @@ Did anyone find out why this is in the checklist?
 -- *Slide End* --
 
 It's in the list because NeCTAR limit you to a maximum of 30. Which means that you have to share them around if
-you have lots of instances!
+you have lots of computers running different applications!
 
 -- *Slide* --
 
@@ -346,7 +352,7 @@ Anyone? Please?
 
 -- *Slide End* --
 
-Secure Shell. We'll cover it shortly. Patience!
+Secure Shell. It's a program. We'll cover it shortly. Patience!
 
 -- *Slide* --
 
@@ -378,6 +384,16 @@ software on it?
 -- *Slide End* --
 
 **Answer:** The Greens have it: there's always hope!
+
+    Try to draw something like the following on a white board as you talk...
+    +-----------------------+                  +------------------------+
+    |     Local PC          |                  |     Remote PC          |
+    |                       |                  |                        |
+    |   +----------+        |                  |   +------------+       |
+    |   |  Terminal|        |     ssh          |   |  Terminal  |       |
+    |   |          +-----------------------------> |            |       |
+    |   +----------+        |                  |   +------------+       |
+    +-----------------------+                  +------------------------+
 
 In the old days, because computing was so expensive, many people would share a single computer by means of terminals. 
 A terminal was a keyboard and a screen, and many terminals could be attached to a single computer.
@@ -451,7 +467,7 @@ There's a special page on the research cloud dashboard that helps you to create 
 NeCTAR will keep one, the public key, and you will download the private key, the other half of the pair, 
 to your local machine.
 
-When NeCTAR fire up a machine for you, they inject the public key into your machine. 
+When NeCTAR fire up a machine for you, they can inject the public key into your machine. 
 Anyone with the private key will be able to communicate with and control that machine. 
 Like the clay seals of yesteryear, you want to keep your private key in a secure location. 
 
@@ -477,7 +493,7 @@ Research cloud:
 
 ## Launch an instance
 
-Use the launch an instance checklist to launch an instance.
+A new checklist to launch an instance.
 
 http://tinyurl.com/starting-an-instance
 
@@ -501,6 +517,11 @@ access and control your machine from that point onward?
 - - - 
 
 **45 minutes to here**
+
+**STAND** Ask everyone to stand and stretch. You're at the halfway point! Whilst they stand give a recap:
+
+You've now fired up a computer on the Research Cloud twice! And created a security group and a keypair.
+That's not bad going. Think of the $20K those two researchers could have saved if they had been here today!
  
 - - -
 
@@ -555,15 +576,31 @@ So here:
 
 -- *Slide* --
 
+## Exercise
+
+Find and run the terminal program, or command line, on your computer.
+
+OSX users can do a Spotlight Search for 'terminal'. 
+
+Babun users simply click on the Babun desktop icon.
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+ 
+-- *Slide End* --
+
+
+-- *Slide* --
+
 **Exercise**
 
-## Connect to your remote instance via ssh. E.G.:
+**Connect to your remote instance via ssh. E.G.:**
 
 ```bash
 ssh -i tut_dev.pem ubuntu@144.6.225.224
 ```
 
-### PS: Windows users... 
+**PS: Windows users...**
 
 To find your key file, 
 prefix `/cygdrive/c/` to the directory 
@@ -585,13 +622,13 @@ Are you sure you want to continue connecting (yes/no)?
 
 simply type "yes".
 
+* <span style="color:red">&#9632;</span> = I've hit an error message!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
 -- *Slide End* --
 
-BTW, I'm hoping that you all fail - with an error message!
+BTW, I'm hoping that you all fail - with an error message! But Windows users won't
  
-Hold up a Green card when you've reached this error message.
-And a Red card if you need help
-
 -- *Slide* --
 
 ## Is this your error message?
@@ -606,16 +643,18 @@ This private key will be ignored.
 bad permissions: ignore key: .ssh/nectar_dev.pem
 ubuntu@144.6.225.224's password: 
 ```
-
+* <span style="color:red">&#9632;</span> = Yes: that's my error!
+* <span style="color:green">&#9632;</span> = I'm ready to move on
+* Hold up both sticky notes if you are in any other state...
+ 
 -- *Slide End* --
-
-Hold up a Green card when you've reached this error message.
-And a Red card if you need help.
 
 What's going on here? Anyone want to hazard an explanation?
 
 The error message is very descriptive. ```ssh``` is rejecting your key file because anyone who has access to your
-machine can read it. You need to tighten up the permissions on this file so that only you can access it.
+machine can read it. And so can use it!
+ 
+You need to tighten up the permissions on this file so that only you can access it.
 
 Hit control-c to exit the password prompt.
 
@@ -684,8 +723,8 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 
 -- *Slide End* --
 
-Hold up a Green card when you've reached this error message.
-And a Red card if you need help.
+Hold up a Green sticky note when you've reached this error message.
+And a Red sticky note if you need help.
 
 You are seeing this error because you are trying to perform system administration, and the ubuntu user you signed in 
 as is not the super user normally allowed to do system administration.
@@ -731,13 +770,8 @@ Do you want to continue? [Y/n]
 
 In this case, reply, 'Y'.
 
-Hold up a Green card when you've done this.
-And a Red card if you need help.
-
-Now we've replicated the steps Anna had to undertake in order to run the upgrade on her machine.
-
-`apt-get` is the front end for a program called a package manager. Its rather like the appstore on your phone, and
-allows you to add, remove, and upgrade applications.
+Hold up a Green sticky note when you've done this.
+And a Red sticky note if you need help.
 
 When you are finished working on your virtual machine, do the following:
 
@@ -755,13 +789,14 @@ Connection to <some_ip_number> closed
 ```
 -- *Slide End* --
 
-You have now closed the ssh connection to the remote machine. If you are not convinced, type `pwd` to see that your
-terminal is now back on your local machine. The teleportation magic is over!
+You have now closed the ssh connection to the remote machine. The teleportation magic is over!
 
-Hold up a Green card if you are back on your local machine.
-And a Red card if you are not.
+Hold up a Green sticky note if you saw 'exit'.
+And a Red sticky note if you did not.
 
-**Exercise**
+-- *Slide* --
+
+## Exercise
 
 Return to the security group in the dashboard and remove the ssh rule.
 
@@ -769,12 +804,16 @@ Now try to ssh into your virtual machine again.
 
 What happens?
 
-Hold up a Green card if you have managed to teleport into your remote machine..
-And a Red card if you haven't.
+-- *Slide End* --
+
+Hold up a Green sticky note if you have managed to teleport into your remote machine..
+And a Red sticky note if you haven't.
 
 I'm hoping to see a sea of Red!
 
-**Exercise**
+-- *Slide* --
+
+## Exercise
 
 Now return to the security group and re-add a rule that allows ssh.
 
@@ -782,8 +821,10 @@ Try to ssh into your virtual machine again.
 
 What happens?
 
-Hold up a Green card if you have managed to teleport into your remote machine..
-And a Red card if you haven't.
+-- *Slide End* --
+
+Hold up a Green sticky note if you have managed to teleport into your remote machine..
+And a Red sticky note if you haven't.
 
 I'm hoping to see a sea of Green!
 
@@ -792,6 +833,9 @@ The takeaway: Security groups can stop you from accessing your server if they ar
 It is a good idea to remove the ssh rule from the security group when you don't kneed it. This stops hackers from 
 trying to access your machine.
 
+So, we've just connected to our remote computer in the cloud using a program called ssh. On that remote computer
+we have updated the software using a command line interface - an interface that is simply used by just typing in
+words!
 
 -- *Slide* --
 
@@ -819,14 +863,15 @@ On the NeCTAR dashboard what's its child tab called?
 1. Directories
 1. Loading
 1. Containers
-1. Boxes 
+1. Boxes
+1. Objects
 
 -- *Slide End* --
 
 Please hold up a Red sticky note if you need help finding it
 Otherwise, hold up your answer...
 
-**A:** C: Containers.
+**Answer:** C: Containers.
 
 There is some terminology that you need to know.
 
@@ -838,7 +883,7 @@ And this tab is where you create containers, and then put files (or objects) int
 
 It is a very, very simple interface. So simple it's actually clunky IMHO. 
 
-Now for a challenge.
+Now for a challenge. There is no checklist!
 
 -- *Slide* --
 
@@ -866,8 +911,6 @@ and a Green one once you are done.
 ▢ Click on the resultant public link <br/>
 ▢ Append '/' and the object name to the browser address <br/>
 ▢ Do you see the image on your browser? <br/>
-▢ Can you make it private? <br/>
-▢ Can you still see the image in your browser? <br/>
 </div>
 
 -- *Slide End* --
@@ -875,9 +918,13 @@ and a Green one once you are done.
 Please hold up a Red sticky note if you need help
 and a Green one once you are done.
 
+You have just worked out how to build a url in your browser to access items in a container. 
+If the container is public you can share these addresses and others will be able to access those 
+files.
+
 -- *Slide* --
 
-You mark a container as being public.
+You mark a container as being public. 
 
 Which of the following are affected:
 
@@ -973,17 +1020,20 @@ But the answer is D, http://training.nectar.org.au/
 This is where you can go once you return to your homes, and look to increase your understanding of
 the Research cloud, the home of your free computer and usb stick!
 
-**Activity:** Close the support tab of the browser.
+**Activity:** Close the support tab of the browser and return to the dashboard.
 
-**A:** Hold up a Red sticky note if you are not looking at the dashboard!
+**A:** Hold up a Red sticky note if you have lost the dashboard!
 
 Between the two drop downs NeCTAR have placed an item titled "Support Ticket". This is
 where you should first turn if you need help.
 
 **Activity:** Get everyone to click on the "Support Ticket" link of the top bar of the dashboard.
 
-The dialogue brought up has a search option. This allows you to try to find the answer to your problem
-yourself before you reach out by completing the form.
+The dialogue brought up allows you to directly submit a help request. 
+
+But it has a search option on the right! 
+
+This allows you to try to find the answer to your problem yourself before you reach out by completing the form.
 
 -- *Slide* --
 
@@ -1076,7 +1126,8 @@ Why did we terminate our computers?
 
 -- *Slide* --
 
-You can think of the Dashboard we've just explored as the drivers seat for an entire Data Centre <br /> 
+You can think of the Dashboard we've just explored as the drivers seat for an entire Data Centre <br />
+The Research Cloud! <br />
 BUT it is a car you can crash! <br />
 And we *want* you to crash it and restart it regularly...<br />
 **\#failfast**!
