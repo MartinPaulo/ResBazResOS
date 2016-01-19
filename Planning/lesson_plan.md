@@ -35,9 +35,9 @@ What you’ve just done:
 
 ✓ Fire up a new instance using your security group and key pair.
 
-Ssh into your instance
+✓ Ssh into your instance
 
-Upgrade and update your instance
+✓ Upgrade and update your instance
 
 ✓ The Object Store: your free USB on the cloud (ditch if time is an issue?)
 
@@ -46,11 +46,11 @@ Upgrade and update your instance
 Where to go from here…
 
 * ✓ Allocations
-* The full course
-* NeCTAR’s online training.
+* ✓ NeCTAR’s online training.
+* The full course?
     
 ✓ Kill your PC!
 
-The where to go from here will be a plug for the full course. Also to provide links to the NeCTAR online 
-training I’ve now sat through.  I thought that the online training could be a page/pdf of links on the drupal 
-instance they have just fired up: they can download it and have it on their desktop for future use.
+Should the where to go from here include a plug for the full ResOS course?
+
+Also must provide links to the NeCTAR online training I’ve now sat through...
