@@ -33,7 +33,8 @@ The directories that make up this project are as follows:
 
 * [Lessons](Lessons/) - The lesson(s);
 * [Planning](Planning/lesson_plan.md) - The plan used to create the course;
-* [Resources](Resources/) - Resources for this particular run of the training.
+* [Resources](Resources/) - Resources for this particular run of the training. Note that some of the
+  resources referenced are in the [ResBas ResOS repository](https://github.com/resbaz/nectar-cloud-lessons/)
 
 ## Instructors notes
 
@@ -54,11 +55,27 @@ as expected before the lesson. If you need to rebuild it, there are instructions
 Try to engage the audience. You can do this by asking questions of them. Or ask them to provide explanations of
 what has just been done.
 
-### Todo
+### Prerequisites
 
-#### Must do
+* Each student will need a laptop with wifi access.
+* The room must allow students to connect to the Internet via wifi. 
+* Do we need to deal with Chromebooks? [Crosh](http://www.howtogeek.com/170648/10-commands-included-in-chrome-oss-hidden-crosh-shell/)
+  Or [Chrome Shell](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo)
+* Each student on the course must have an AAF logon.
+* The Windows users will need to install [Babun](Resources/Babun.md) (5 minutes. Perhaps they can do this on the day?)
+* Each person must have an allocation on the Research Cloud that they can use.
 
-1. [ ] Work through what the prerequisites are and how to deal with them.
+For those that have expired trial projects we can:
+
+* get to pair up with others
+* have a special tenancy for the lesson, and then them to it on the fly. 
+  This is not a great solution as people in the tenancy will step on each others toes.
+* have someone on hand to extend their trial tenancies on the spot?
+
+If we could get participants AAF credentials before hand, we could:
+
+* pre-create a special allocation for each person on the course that dies the day after the course.
+* run a query to check if they are part of any project, and the status of their project.
 
 ## Notes
 
@@ -70,22 +87,15 @@ We could showcase Intersect's [Launchpod](https://launchpod.intersect.org.au/)?
 However I can't use it because of Intersect defect 
 [INC0012566](https://intersect.service-now.com/ess/Incident+Information.do?sysparm_document_key=incident,f61198d06fc15600cb82c6168d3ee4c8)
 (my aaf email is different to my NeCTAR user id). So if we do show it off someone else needs to do the work.
-    
-Tim: "I wasn't able to use my pt account to create a new instance because it had already exceeded its quota."
-
-We can:
-
-* get people like this to pair up with others
-* have a special tenancy for the lesson, and then to add people like this to it on the fly. 
-  This is not a great solution as people in the tenancy will step on each others toes.
-* have someone on hand to extend their trial tenancies on the spot?
-
-If we could get their AAF credentials before hand, we could:
-
-* pre-create a special allocation for each person on the course that dies the day after the course.
-* run a script to check if they are part of any project, and the status of their project.
 
 Should we use the paint video to explain keys? https://www.youtube.com/watch?v=YEBfamv-_do
+
+### Todo
+
+#### Must do
+
+1. [ ] Work through the prerequisites and work out how to deal with them.
+
 
 
 
