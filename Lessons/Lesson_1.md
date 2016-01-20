@@ -308,52 +308,6 @@ Walk through each option, describing how it could affect the instance you are tr
 
 **Answer: E.** Yes, it’s true. The research cloud can experience network issues from time to time. 
 
--- *Slide* --
-
-## Count of less than 30 security groups?
-
-Did anyone find out why this is in the checklist?
-
--- *Slide End* --
-
-It's in the list because NeCTAR limit you to a maximum of 30. Which means that you have to share them around if
-you have lots of computers running different applications!
-
--- *Slide* --
-
-## HTTP vs HTTPS?
-
-Can anyone tell us about these two?
-
--- *Slide End* --
-
-HTTP is Hypertext Transfer Protocol. All you need to know is that it is the way in which web pages are requested
-from the server and transferred back to your computer. HTTPS simply appends "Secure" to the end of HTTP. It gives you
-the guarantee that the communications between you and the server are encrypted. So HTTP means anyone between you and
-the server can see what pages you are looking at, and their contents. HTTPS means that they only will know what site
-you are visiting.
-
--- *Slide* --
-
-## What is SSH?
-
-Anyone? Please?
-
--- *Slide End* --
-
-Secure Shell. It's a program. We'll cover it shortly. Patience!
-
--- *Slide* --
-
-## And CIDR?
-
-(And no, it's not a drink!)
-
--- *Slide End* --
-
-Classless Internet Domain Routing, a snazzy name for a way of specifying a range of internet addresses in 
-one fell swoop.
-
 - - - 
 
 **30 minutes to here**
