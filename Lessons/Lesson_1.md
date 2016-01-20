@@ -1105,13 +1105,26 @@ Again, the greens have it.
 You can also request to have your  project/tenant extended. 
 You do this by selecting the "Convert project trial" option when filling in the allocation request form.
 
+
 -- *Slide* --
 
-You can think of the Dashboard we've just explored as the drivers seat for an entire Data Centre <br />
-The Research Cloud! <br />
+# Homework...
+
+http://tinyurl.com/ResBaz-Links
+
+-- *Slide End* --
+
+We've just introduced the Research Cloud. In order to make use of it effectively do work through the NeCTAR training.
+
+The page referenced here gives links to the NeCTAR training material that covers what we've done today.
+
+-- *Slide* --
+
+You can think of the Dashboard we've just explored as the drivers seat for an entire Data Centre: <br />
+The Research Cloud. <br />
 BUT it is a car you can crash! <br />
 And we *want* you to crash it and restart it regularly...<br />
-**\#failfast**!
+Don't be afraid: **\#failfast**!
 
 ## Thank you
 
