@@ -118,9 +118,7 @@ Regardless of your path,  your trial project should give you the time to learn t
 
 -- *Slide* --
 
-## Question
-
-What's your trial project lifetime?
+## What's your trial project lifetime?
 
 1. for ever and ever after
 1. three months from today
@@ -173,9 +171,7 @@ their project that’s $20 000 of grant money that could have been used elsewher
 
 -- *Slide* --
 
-## Question
-
-Currently, how much does it cost a researcher to use the Research Cloud?
+### Currently, how much does it cost a researcher to use the Research Cloud?
 
 1. Gazillions!
 1. Squillions!
@@ -190,10 +186,6 @@ Currently, how much does it cost a researcher to use the Research Cloud?
 **Answer E**
 
 ---
-
-There's another powerful reason to use the Research Cloud: access to storage which is kept locally in Australia and 
-available on the high speed [AARNET](https://www.aarnet.edu.au/about-us) backbone. Think of it as a USB stick on
-steroids!
 
 And all of this is backed by a research facing organization that is not driven by profit.
 
@@ -224,6 +216,7 @@ A security group is a set of rules used to create a firewall for your computer i
 1. An attractive wall made from fire
 1. Something that selects what network traffic that can pass
 1. That what's built on top of an ice foundation
+1. A popular barbecue cooking style
 
 -- *Slide End* --
 
@@ -281,9 +274,7 @@ And of course we've created a checklist to guide you. This ones a little more fo
 
 -- *Slide* --
 
-## Security Groups
-
-Create a Security Group with the help of the security group checklist
+### Create a Security Group with the help of the security group checklist:
 
 http://tinyurl.com/creating-a-security-group
 
@@ -302,10 +293,8 @@ if you change rules for one server, you might inadvertently break another.
 
 -- *Slide* --
 
-## Question
-
-I change the rules in a security group by removing port 80 (http). Mysteriously a web server on another VM in the 
-project stops "working". Could it be because:
+**I change the rules in a security group by removing port 80 (http). Mysteriously a web server on another VM in the 
+project stops "working". Could it be because:**
 
 1. The security group was shared with the other machine?
 1. The web server inexplicably broke?
@@ -321,7 +310,7 @@ Walk through each option, describing how it could affect the instance you are tr
 
 -- *Slide* --
 
-## Count of less than 30 security groups
+## Count of less than 30 security groups?
 
 Did anyone find out why this is in the checklist?
 
@@ -332,7 +321,7 @@ you have lots of computers running different applications!
 
 -- *Slide* --
 
-## HTTP vs HTTPS
+## HTTP vs HTTPS?
 
 Can anyone tell us about these two?
 
@@ -375,8 +364,8 @@ one fell swoop.
 
 -- *Slide* --
 
-Your free PC on the cloud has no keyboard, monitor or mouse. Do you have any hope of installing or removing
-software on it?
+**Your free PC on the cloud has no keyboard, monitor or mouse. Do you have any hope of installing or removing
+software on it?**
 
 * <span style="color:red">&#9632;</span> = No, doom and gloom!
 * <span style="color:green">&#9632;</span> = Somehow, somewhere, there is hope!
@@ -475,9 +464,7 @@ And again, we've create a checklist to help you create a keypair.
 
 -- *Slide* --
 
-## Key Pairs
-
-Create a Keypair with the help of the key pair checklist
+### Create a Keypair with the help of the key pair checklist:
 
 http://tinyurl.com/creating-a-keypair
 
@@ -491,9 +478,7 @@ Research cloud:
 
 -- *Slide* --
 
-## Launch an instance
-
-A new checklist to launch an instance.
+### Use this new checklist to launch an instance:
 
 http://tinyurl.com/starting-an-instance
 
@@ -503,6 +488,8 @@ http://tinyurl.com/starting-an-instance
 -- *Slide End* --
 
 -- *Slide* --
+
+## Hmm...
 
 You fire up your machine. Days later, you realise that you’ve lost your private key. Will you ever be able to 
 access and control your machine from that point onward?
@@ -527,7 +514,7 @@ That's not bad going. Think of the $20K those two researchers could have saved i
 
 -- *Slide* --
 
-## Customization Script?
+## What was the "Customization Script"?
 
 ```bash
 #!/bin/bash -v
@@ -539,7 +526,7 @@ apt-get update && apt-get -y upgrade
 
 The second time we launched a machine we put this "Customization Script" into the post creation tab. 
 
-We were asking for this command set to be run on our PC in the cloud once it had started.
+We were asking for this set of commands to be run on our PC in the cloud once it had started.
 
 `apt-get` is the front end for a program called a package manager. Its rather like the appstore on your phone, and
 allows you to add, remove, and upgrade applications. So we were asking for all the applications to be brought up to
@@ -576,9 +563,7 @@ So here:
 
 -- *Slide* --
 
-## Exercise
-
-Find and run the terminal program, or command line, on your computer.
+### Find and run the terminal program, or command line, on your computer.
 
 OSX users can do a Spotlight Search for 'terminal'. 
 
@@ -592,15 +577,13 @@ Babun users simply click on the Babun desktop icon.
 
 -- *Slide* --
 
-**Exercise**
-
-**Connect to your remote instance via ssh. E.G.:**
+### Connect to your remote instance via ssh. e.g.:
 
 ```bash
 ssh -i tut_dev.pem ubuntu@144.6.225.224
 ```
 
-**PS: Windows users...**
+### PS: Windows users...
 
 To find your key file, 
 prefix `/cygdrive/c/` to the directory 
@@ -643,7 +626,7 @@ This private key will be ignored.
 bad permissions: ignore key: .ssh/nectar_dev.pem
 ubuntu@144.6.225.224's password: 
 ```
-* <span style="color:red">&#9632;</span> = Yes: that's my error!
+* <span style="color:red">&#9632;</span> = Yes: that's very like my error!
 * <span style="color:green">&#9632;</span> = I'm ready to move on
 * Hold up both sticky notes if you are in any other state...
  
@@ -658,26 +641,28 @@ You need to tighten up the permissions on this file so that only you can access 
 
 Hit control-c to exit the password prompt.
 
-This is where `chmod` comes to the rescue!
+This is where the change file mode command, `chmod` comes to the rescue!
 
-In my case, allowing me (the current **u**ser) to be able to **r**ead and **w**rite the file, and to exclude the 
-**g**roup and **o**thers from being able to **r**ead, **w**rite or try to run (e**x**ecute) it, the command would be:
 
 -- *Slide* --
 
-## Exercise
+## Change Mode
 
-This works for me:
+The `chmod` command (**ch**ange file **mod**e)
 
 ```bash
-chmod u=rw,go-rwx keys/tut_dev.pem 
+chmod u=rw,go-rwx <path to key> 
 ```
 
 Modify the permissions on your key file so that only you can read or write it.
 
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
 -- *Slide End* --
 
-Then issue the `pwd` command to see what directory you are in.
+Here the command is allowing me (the current **u**ser) to be able to **r**ead and **w**rite the file, and to exclude 
+any **g**roups and **o**thers from being able to **r**ead, **w**rite or try to run (e**x**ecute) it.
 
 Retry the ssh command.
 
@@ -695,17 +680,21 @@ Last login: Mon Mar 30 01:27:13 2015 from hqrouter.vpac.org
 ubuntu@drupal:~$ 
 ```
 
+* <span style="color:red">&#9632;</span> = No - Help!
+* <span style="color:green">&#9632;</span> = Yes, I'm OK...
+
 -- *Slide End* --
+
+Finally, we are going try and update our web server. 
 
 -- *Slide* --
 
-## Exercise
-
-Finally, we are going try and update our web server. Try to execute the first command in the set:
+## Try to execute the first command in the set:
 
 ```bash
 apt-get update
 ```
+
 -- *Slide End* --
 
 -- *Slide* --
@@ -721,10 +710,10 @@ E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
 E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 ```
 
--- *Slide End* --
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = Yes, this is what I'm seeing...
 
-Hold up a Green sticky note when you've reached this error message.
-And a Red sticky note if you need help.
+-- *Slide End* --
 
 You are seeing this error because you are trying to perform system administration, and the ubuntu user you signed in 
 as is not the super user normally allowed to do system administration.
@@ -733,7 +722,7 @@ But don't panic!
 
 -- *Slide* --
 
-## Exercise
+## SUDO
 
 The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
 the security privileges of the super user.
@@ -749,11 +738,9 @@ sudo apt-get update
 You should now see a whole lot of gets scrolling by, as the operating system updates its lists of installed and 
 available software.
 
-Once done, execute the command:
-
 -- *Slide* --
 
-## Exercise
+## Then execute the command:
 
 ```bash
 sudo apt-get upgrade
@@ -773,13 +760,61 @@ In this case, reply, 'Y'.
 Hold up a Green sticky note when you've done this.
 And a Red sticky note if you need help.
 
-When you are finished working on your virtual machine, do the following:
+To see how easy it is to use the package manager, install the fortune application.
 
 -- *Slide* --
 
-## Exercise
+## Install fortune
 
-Type `exit`
+```bash
+sudo apt-get install fortune-mod
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+-- *Slide End* --
+
+-- *Slide* --
+
+## Run fortune
+
+```bash
+fortune
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+-- *Slide End* --
+
+-- *Slide* --
+
+## Remove fortune
+
+```bash
+sudo apt-get remove fortune-mod
+```
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+-- *Slide End* --
+
+So what you've just done is used `apt-get`, the front end to the package manager to update the system
+and then to add and remove an application. Feel the power!
+
+Now you are finished working on your virtual machine, do the following:
+
+-- *Slide* --
+
+### End your ssh session
+
+Type 
+
+```bash
+exit
+```
 
 You should see the following:
 
@@ -787,6 +822,7 @@ You should see the following:
 logout
 Connection to <some_ip_number> closed
 ```
+
 -- *Slide End* --
 
 You have now closed the ssh connection to the remote machine. The teleportation magic is over!
@@ -796,9 +832,9 @@ And a Red sticky note if you did not.
 
 -- *Slide* --
 
-## Exercise
+### Remove the ssh rule from the security group
 
-Return to the security group in the dashboard and remove the ssh rule.
+Find the security group in the dashboard and remove the ssh rule.
 
 Now try to ssh into your virtual machine again.
 
@@ -813,9 +849,9 @@ I'm hoping to see a sea of Red!
 
 -- *Slide* --
 
-## Exercise
+### Add an ssh rule to the security group
 
-Now return to the security group and re-add a rule that allows ssh.
+Find the security group and re-add a rule that allows ssh.
 
 Try to ssh into your virtual machine again.
 
@@ -839,9 +875,43 @@ words!
 
 -- *Slide* --
 
-# The object store
+## Terminate your free computer!
+
+Check to see if you have any computers running (Compute-Instances).
+
+If so, terminate them.
+
+* <span style="color:red">&#9632;</span> = Help me!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
 
 -- *Slide End* --
+
+
+-- *Slide* --
+
+### Why did we terminate our computers?
+
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. To conserve our trial tenancy
+1. All of the above
+
+-- *Slide End* --
+
+**Answer:** The E's have it!
+
+-- *Slide* --
+
+# The object store
+
+Your supercharged USB stick
+
+-- *Slide End* --
+
+There's another powerful reason to use the Research Cloud: access to storage which is kept locally in Australia and 
+available on the high speed [AARNET](https://www.aarnet.edu.au/about-us) backbone. There are different forms of
+storage available: but we are only going to look at the Object Store.
 
 The *Object Store* is an ideal replacement for the usb sticks that some people tend to carry 
 around with them: You can upload and download files to it from any browser: and you can keep those files private,
@@ -856,9 +926,7 @@ Any bit rot, and the faulty file is replaced with a good copy.
 
 -- *Slide* --
 
-## The object store
-
-On the NeCTAR dashboard what's its child tab called?
+### On the NeCTAR dashboard what's the Object Store's child tab called?
 
 1. Directories
 1. Loading
@@ -875,7 +943,7 @@ Otherwise, hold up your answer...
 
 There is some terminology that you need to know.
 
-Files are called objects. Unsurprisingly, since it's called the objectore.
+Files are called objects. Unsurprisingly, since it's called the object store.
  
 And objects go into containers.
 
@@ -910,7 +978,7 @@ and a Green one once you are done.
 ▢ Upload a picture into it <br/>
 ▢ Click on the resultant public link <br/>
 ▢ Append '/' and the object name to the browser address <br/>
-▢ Do you see the image on your browser? <br/>
+▢ Do you see the image in your browser? <br/>
 </div>
 
 -- *Slide End* --
@@ -924,9 +992,7 @@ files.
 
 -- *Slide* --
 
-You mark a container as being public. 
-
-Which of the following are affected:
+### You mark a container as being public. Which of the following are affected:
 
 1. Just the first file in the container
 1. None of the files in the container
@@ -978,9 +1044,7 @@ There's also a handy link that if followed tells you how to contact Support.
 
 -- *Slide* --
 
-## Question
-
-Can you find the support email address?
+### Can you find the support email address?
 
 Is it:
 
@@ -988,6 +1052,7 @@ Is it:
 1. help_me@rc.nectar.org.au
 1. do_not_reply@rc.nectar.org.au 
 1. the_big_boss@rc.nectar.org.au
+1. support@amazon.com
 
 -- *Slide End* --
 
@@ -998,11 +1063,9 @@ Remember, you now know where to go when you want to find helpful documentation.
 
 -- *Slide* --
 
-## Question
+### Can you find the NeCTAR training site?
 
-Can you find the NeCTAR training site?
-
-Is its address in the browser:
+Is it:
 
 1. https://dashboard.rc.nectar.org.au
 1. https://support.nectar.org.au
@@ -1037,9 +1100,7 @@ This allows you to try to find the answer to your problem yourself before you re
 
 -- *Slide* --
 
-## Question
-
-Try searching the knowledge base for "allocation".
+### Search the knowledge base for "allocation"
 
 What does an approved allocation request become?
 
@@ -1066,9 +1127,7 @@ To close the dialogue without sending anything just click on the dashboard behin
 
 -- *Slide* --
 
-## Allocations
-
-Can you all find the Allocations tab?
+### Can you all find the Allocations tab?
 
 * <span style="color:red">&#9632;</span> = No...
 * <span style="color:green">&#9632;</span> = Yes!
@@ -1080,9 +1139,7 @@ It’s basically an online form that allows you to apply for a project with enou
 
 -- *Slide* --
 
-## Extend trial project
-
-Is there an option to convert your trial project on the allocation form?
+### Is there an option to convert your trial project on the allocation form?
 
 * <span style="color:red">&#9632;</span> = No!
 * <span style="color:green">&#9632;</span> = Yes, I can see it.
@@ -1093,36 +1150,6 @@ Again, the greens have it.
 
 You can also request to have your  project/tenant extended. 
 You do this by selecting the "Convert project trial" option when filling in the allocation request form.
-
--- *Slide* --
-
-## Terminate your free computer!
-
-Check to see if you have any computers running (Compute-Instances).
-
-If so, terminate them.
-
-* <span style="color:red">&#9632;</span> = Help me!
-* <span style="color:green">&#9632;</span> = I'm ready to move on...
-
--- *Slide End* --
-
-
--- *Slide* --
-
-## Question
-
-Why did we terminate our computers?
-
-1. To conserve our trial tenancy
-1. To conserve our trial tenancy
-1. To conserve our trial tenancy
-1. To conserve our trial tenancy
-1. All of the above
-
--- *Slide End* --
-
-**Answer:** The E's have it!
 
 -- *Slide* --
 
