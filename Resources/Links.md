@@ -1,5 +1,9 @@
 # Linking NeCTAR Training to ResOS
 
+NeCTAR's online training can be found at: 
+
+* http://training.nectar.org.au
+
 ## We covered:
 
 ### Security Groups
