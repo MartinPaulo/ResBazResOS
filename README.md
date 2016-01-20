@@ -35,12 +35,6 @@ The directories that make up this project are as follows:
 * [Planning](Planning/lesson_plan.md) - The plan used to create the course;
 * [Resources](Resources/) - Resources for this particular run of the training.
 
-## Delivering the lessons
-
-The lessons assume that participants have both red and green coloured sticky notes and cards lettered from "A" through
-to "E" (in the style of Software Carpentry). These are used to answer questions and to show distress if the students
-aren't keeping up or need help.
-
 ## Instructors notes
 
 ### In general
@@ -65,84 +59,35 @@ what has just been done.
 #### Must do
 
 1. [ ] Work through what the prerequisites are and how to deal with them.
-1. [ ] Make sure all the required props are ready.
-1. [ ] Add "can copy and paste" to the post creation tab of the proper launch VM script
-
-#### Nice to have
-
-1. [ ] Can we have some sort of shell in place via DIT4C that will allow ssh without people having to install
-       anything?
 
 ## Notes
 
-Fiona: Can there be some more rationale - what is this going to let me do? Refer back to the applications/benefits
-more often
+Fiona: "Can there be some more rationale - what is this going to let me do? Refer back to the applications/benefits
+more often"
 
-We could showcase Intersect's [Launchpod](https://launchpod.intersect.org.au/)? However I can't use it because of
-Intersect defect 
+We could showcase Intersect's [Launchpod](https://launchpod.intersect.org.au/)? 
+
+However I can't use it because of Intersect defect 
 [INC0012566](https://intersect.service-now.com/ess/Incident+Information.do?sysparm_document_key=incident,f61198d06fc15600cb82c6168d3ee4c8)
-(my aaf email is different to my NeCTAR user id)
+(my aaf email is different to my NeCTAR user id). So if we do show it off someone else needs to do the work.
     
-Tim: I wasn't able to use my pt account to create a new instance because it had already exceeded its quota.
+Tim: "I wasn't able to use my pt account to create a new instance because it had already exceeded its quota."
 
-We are just going to have to get people like this to pair up with others: the only other way to handle this is
-to create a special tenancy for the lesson, and then to add people like this to it on the fly...
+We can:
+
+* get people like this to pair up with others
+* have a special tenancy for the lesson, and then to add people like this to it on the fly. 
+  This is not a great solution as people in the tenancy will step on each others toes.
+* have someone on hand to extend their trial tenancies on the spot?
+
+If we could get their AAF credentials before hand, we could:
+
+* pre-create a special allocation for each person on the course that dies the day after the course.
+* run a script to check if they are part of any project, and the status of their project.
 
 Should we use the paint video to explain keys? https://www.youtube.com/watch?v=YEBfamv-_do
 
-## Window shells
 
-### [Git Bash](https://git-for-windows.github.io/)
-
-Has ssh, but I can't get it to ssh into a vm?
-
-This is because it is hard wired to use id_rsa as its key choice. See the following
-[Stack Overflow](http://stackoverflow.com/questions/17383177/permission-denied-publickey-errors-on-windows-when-using-moovweb)
-bug.
-
-Advantage is that it opens its default shell into the users home windows directory.
-Disadvantage is that the user is limited to one key.
-
-### [Moba XTerm](http://mobaxterm.mobatek.net/)
-
-Worked flawlessly: but very different experience to regular osx shell. \
-
-Disadvantage is that it requires two different lesson streams on the setup instructions.
-
-### [Babun](http://babun.github.io/)
-
-Worked flawlessly.
-
-A wrapper around cygwin
-
-Disadvantage is the bizarro /cygdrive/c/Users/IEUser/ dance to get to the users home directory.
-
-Disadvantage is that it ignores file permissions [by design](https://github.com/babun/babun/issues/457).
-Remove the '`noacl`' flag from `/etc/fstab` fixes this.
-
-### [Cmder](http://cmder.net/)
-
-Worked flawlessly.
-
-Disadvantage is that it took forever to unzip (could be the virtual machine disk growing), and that lots
-of security advisories popped up...
-
-Disadvantage is that it ignores file permissions.
-
-### [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
-
-Worked flawlessly.
-
-Downside is as for MobaXTerm: a different experience to the osx shell, hence two different lesson streams.
-
-### [Cygwin](https://cygwin.com/)
-
-Worked flawlessly.
-
-Advantage is that it observes file permissions flawlessly
-
-Downside is the installer, and getting people to step through it in a hurry :(
-Disadvantage is the bizarro /cygdrive/c/Users/IEUser/ dance to get to the users home directory.
 
 
 
