@@ -33,6 +33,8 @@ What you’ve just done:
 
 ✓ Create a KeyPair using a checklist
 
+✓ Images
+
 ✓ Fire up a new instance using your security group and key pair.
 
 ✓ Ssh into your instance

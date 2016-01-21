@@ -427,8 +427,47 @@ http://tinyurl.com/creating-a-keypair
 
 -- *Slide End* --
 
-Ok: so now you have created a key pair and a security group. Let's use them to fire up a new free pc on the 
-Research cloud:
+Ok: so now you have created a key pair and a security group. 
+
+Let's use them to fire up a new free pc on the Research cloud.
+
+But before we do that there's another part of the Research Cloud that we should know about.
+
+-- *Slide* --
+
+## Find the images tab on the dashboard.
+
+(Project -> Compute -> Images Tab)
+
+* <span style="color:red">&#9632;</span> = What? There's no such tab!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+-- *Slide End* --
+
+**Concept alert:** What we have here is simply a listing of files, each being a copy of a hard drives contents. Each 
+file is termed an "image".
+
+How the Research Cloud works is that you select a file that is a copy of the contents of a hard drive when you 
+launch your machine. That file is copied across to wherever your machine is going to be run and becomes the 
+basis of your new machine's hard drive.
+
+**Demonstrate:** Do a whiteboard drawing of this.
+
+Across the top of the list of images are four filters that are reasonably self explanatory.
+
+1. Project - the images that are visible only to your project. 
+2. NeCTAR official - the images that Research Cloud share with the world. These are simply images of operating 
+   systems.  Whilst on this list NeCTAR is keeping them current. 
+3. Shared with me - the images that other users have opted to share with you. 
+   Sharing images with others requires the use of command line tools, so it's a more advanced topic that you will
+   have to leave till you are more familiar with the research cloud.
+4. Public - the list of images that others have shared with the world. These mostly already have applications
+   installed on them, ready to run.
+
+As new users to the Research Cloud it is unlikely that you’ll have either project or shared images. Those come 
+with time. 
+
+And it's from here that we are going to launch our computer this time.
 
 -- *Slide* --
 
