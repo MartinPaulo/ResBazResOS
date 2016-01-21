@@ -523,28 +523,7 @@ That's not bad going. Think of the $20K those two researchers could have saved i
  
 - - -
 
--- *Slide* --
-
-## What was the "Customization Script"?
-
-```bash
-#!/bin/bash -v
-
-apt-get update && apt-get -y upgrade
-```
-
--- *Slide End* --
-
-The second time we launched a machine we put this "Customization Script" into the post creation tab. 
-
-We were asking for this set of commands to be run on our PC in the cloud once it had started.
-
-`apt-get` is the front end for a program called a package manager. Its rather like the appstore on your phone, and
-allows you to add, remove, and upgrade applications. So we were asking for all the applications to be brought up to
-date after the pc had started. This means that all the fixes and security releases since the image was created
-are applied. 
-
-And now with the magic of `ssh` we are going to run the same command again on our computer in the cloud.
+Now, with the magic of `ssh` we are going to open our administrator console on our computer in the cloud.
 
 This is the basic form our `ssh` command will take:
 
@@ -696,7 +675,21 @@ ubuntu@drupal:~$
 
 -- *Slide End* --
 
-Finally, we are going try and update our web server. 
+-- *Slide* --
+
+## The next piece of magic
+
+```bash
+apt-get
+```
+
+-- *Slide End* --
+
+
+`apt-get` is the front end for a program called a package manager. Its rather like the appstore on your phone, and
+allows you to add, remove, and upgrade applications. So we now going to update all the applications on your
+PC. This means that all the fixes and security releases since the image was created all those months ago
+will be applied. 
 
 -- *Slide* --
 
