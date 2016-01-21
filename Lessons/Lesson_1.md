@@ -480,6 +480,24 @@ http://tinyurl.com/starting-an-instance
  
 -- *Slide End* --
 
+BTW, this checklist is a far more comprehensive one than the last. Now you not only selected a security group.
+You also set the keypair that you are going to use to ssh into your computer on the cloud.
+
+-- *Slide* --
+
+### Was the IP number of your first computer in the cloud the same as the IP number of your second?
+
+* <span style="color:red">&#9632;</span> = No
+* <span style="color:green">&#9632;</span> = Yes
+
+-- *Slide End* --
+
+Here both answers can be correct!
+
+NeCTAR have a pool of IP numbers. Every time you spin up a computer, an IP number is taken out of the pool and
+assigned to the computer. Every time you terminate a computer the IP number is returned to the pool. So you may
+get lucky and get the same IP number. But the chances are you will get a different IP number with every run.
+
 -- *Slide* --
 
 ## Hmm...
