@@ -213,6 +213,16 @@ http://tinyurl.com/creating-a-keypair
 </script></section>
 <section data-markdown><script type="text/template">
 
+## Find the images tab on the dashboard.
+
+(Project -> Compute -> Images Tab)
+
+* <span style="color:red">&#9632;</span> = What? There's no such tab!
+* <span style="color:green">&#9632;</span> = I'm ready to move on...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
 ### Use this new checklist to launch an instance:
 
 http://tinyurl.com/starting-an-instance
@@ -223,6 +233,14 @@ http://tinyurl.com/starting-an-instance
 </script></section>
 <section data-markdown><script type="text/template">
 
+### Was the IP number of your first computer in the cloud the same as the IP number of your second?
+
+* <span style="color:red">&#9632;</span> = No
+* <span style="color:green">&#9632;</span> = Yes
+
+</script></section>
+<section data-markdown><script type="text/template">
+
 ## Hmm...
 
 You fire up your machine. Days later, you realise that you’ve lost your private key. Will you ever be able to 
@@ -230,17 +248,6 @@ access and control your machine from that point onward?
 
 * <span style="color:red">&#9632;</span> = No, not without a world of pain!
 * <span style="color:green">&#9632;</span> = Easily!
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## What was the "Customization Script"?
-
-```bash
-#!/bin/bash -v
-
-apt-get update && apt-get -y upgrade
-```
 
 </script></section>
 <section data-markdown><script type="text/template">
@@ -354,7 +361,16 @@ ubuntu@drupal:~$
 </script></section>
 <section data-markdown><script type="text/template">
 
-## Try to execute the first command in the set:
+## The next piece of magic
+
+```bash
+apt-get
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Try to execute the command:
 
 ```bash
 apt-get update
@@ -382,8 +398,12 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
 
 ## SUDO
 
-The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
-the security privileges of the super user.
+The `sudo` command (**s**uper **u**ser **do**) comes to your help. 
+
+It allows the ubuntu user to run commands with the security privileges of the super user.
+
+</script></section>
+<section data-markdown><script type="text/template">
 
 Try to execute the command again, this time with `sudo`:
 
@@ -410,6 +430,11 @@ Do you want to continue? [Y/n]
 </script></section>
 <section data-markdown><script type="text/template">
 
+<img src="//imgs.xkcd.com/comics/sandwich.png" title="Proper User Policy apparently means Simon Says." alt="Sandwich">
+
+</script></section>
+<section data-markdown><script type="text/template">
+
 ## Install fortune
 
 ```bash
@@ -426,18 +451,6 @@ sudo apt-get install fortune-mod
 
 ```bash
 fortune
-```
-
-* <span style="color:red">&#9632;</span> = Help me!
-* <span style="color:green">&#9632;</span> = I'm ready to move on...
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## Remove fortune
-
-```bash
-sudo apt-get remove fortune-mod
 ```
 
 * <span style="color:red">&#9632;</span> = Help me!
@@ -509,6 +522,92 @@ If so, terminate them.
 </script></section>
 <section data-markdown><script type="text/template">
 
+## The settings drop down
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## The Help Menu
+
+Select "help" on the settings drop down.
+
+* <span style="color:red">&#9632;</span> = I'm still looking at the dashboard.
+* <span style="color:green">&#9632;</span> = Another web page has opened!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Can you find the support email address?
+
+Is it:
+
+1. support@nectar.org.au
+1. support@rc.nectar.org.au
+1. help@nectar.org.au 
+1. the_big_boss@nectar.org.au
+1. support@amazon.com
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Can you find the NeCTAR training site?
+
+Is it:
+
+1. https://dashboard.rc.nectar.org.au
+1. https://support.nectar.org.au
+1. http://www.nectar.org.au/ 
+1. http://training.nectar.org.au/
+1. http://status.rc.nectar.org.au/
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Close the support tab of the browser and return to the dashboard.
+
+* <span style="color:red">&#9632;</span> = I've lost the dashboard!
+* <span style="color:green">&#9632;</span> = I'm good to go!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Click on the "Support Ticket" link of the top bar of the dashboard.
+
+* <span style="color:red">&#9632;</span> = I can't see it!
+* <span style="color:green">&#9632;</span> = I've clicked!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Search the knowledge base for "allocation"
+
+What does an approved allocation request become?
+
+1. a tenancy
+1. a project
+1. a collaboration
+1. an empire
+1. a chore
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Can you all find the Allocations tab?
+
+* <span style="color:red">&#9632;</span> = No...
+* <span style="color:green">&#9632;</span> = Yes!
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+### Is there an option to convert your trial project on the allocation form?
+
+* <span style="color:red">&#9632;</span> = No!
+* <span style="color:green">&#9632;</span> = Yes, I can see it.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
 # The object store
 
 Your supercharged USB stick
@@ -561,76 +660,6 @@ Once your done, can you delete it all?
 1. The last file in the container
 
 ?
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## The settings drop down
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-## The Help Menu
-
-Select "help" on the settings drop down.
-
-* <span style="color:red">&#9632;</span> = I'm still looking at the dashboard.
-* <span style="color:green">&#9632;</span> = Another web page has opened!
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-### Can you find the support email address?
-
-Is it:
-
-1. support@rc.nectar.org.au
-1. help_me@rc.nectar.org.au
-1. do_not_reply@rc.nectar.org.au 
-1. the_big_boss@rc.nectar.org.au
-1. support@amazon.com
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-### Can you find the NeCTAR training site?
-
-Is it:
-
-1. https://dashboard.rc.nectar.org.au
-1. https://support.nectar.org.au
-1. http://www.nectar.org.au/ 
-1. http://training.nectar.org.au/
-1. http://status.rc.nectar.org.au/
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-### Search the knowledge base for "allocation"
-
-What does an approved allocation request become?
-
-1. a tenancy
-1. a project
-1. a collaboration
-1. an empire
-1. a task
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-### Can you all find the Allocations tab?
-
-* <span style="color:red">&#9632;</span> = No...
-* <span style="color:green">&#9632;</span> = Yes!
-
-</script></section>
-<section data-markdown><script type="text/template">
-
-### Is there an option to convert your trial project on the allocation form?
-
-* <span style="color:red">&#9632;</span> = No!
-* <span style="color:green">&#9632;</span> = Yes, I can see it.
 
 </script></section>
 <section data-markdown><script type="text/template">
