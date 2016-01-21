@@ -693,7 +693,7 @@ will be applied.
 
 -- *Slide* --
 
-## Try to execute the first command in the set:
+## Try to execute the command:
 
 ```bash
 apt-get update
@@ -728,8 +728,16 @@ But don't panic!
 
 ## SUDO
 
-The `sudo` command (**s**uper **u**ser **do**) comes to your help. It allows the ubuntu user to run commands with
-the security privileges of the super user.
+The `sudo` command (**s**uper **u**ser **do**) comes to your help. 
+
+It allows the ubuntu user to run commands with the security privileges of the super user.
+
+-- *Slide End* --
+
+Think of `sudo` as being like a safety catch. When you find yourself using it, double check what you are about to
+do!
+
+-- *Slide* --
 
 Try to execute the command again, this time with `sudo`:
 
@@ -764,6 +772,12 @@ In this case, reply, 'Y'.
 Hold up a Green sticky note when you've done this.
 And a Red sticky note if you need help.
 
+-- *Slide* --
+
+<img src="//imgs.xkcd.com/comics/sandwich.png" title="Proper User Policy apparently means Simon Says." alt="Sandwich">
+
+-- *Slide End* --
+
 To see how easy it is to use the package manager, install the fortune application.
 
 -- *Slide* --
@@ -792,21 +806,8 @@ fortune
 
 -- *Slide End* --
 
--- *Slide* --
-
-## Remove fortune
-
-```bash
-sudo apt-get remove fortune-mod
-```
-
-* <span style="color:red">&#9632;</span> = Help me!
-* <span style="color:green">&#9632;</span> = I'm ready to move on...
-
--- *Slide End* --
-
 So what you've just done is used `apt-get`, the front end to the package manager to update the system
-and then to add and remove an application. Feel the power!
+and then to add an application. Feel the power!
 
 Now you are finished working on your virtual machine, do the following:
 
@@ -1052,10 +1053,10 @@ There's also a handy link that if followed tells you how to contact Support.
 
 Is it:
 
+1. support@nectar.org.au
 1. support@rc.nectar.org.au
-1. help_me@rc.nectar.org.au
-1. do_not_reply@rc.nectar.org.au 
-1. the_big_boss@rc.nectar.org.au
+1. help@nectar.org.au 
+1. the_big_boss@nectar.org.au
 1. support@amazon.com
 
 -- *Slide End* --
@@ -1087,16 +1088,28 @@ But the answer is D, http://training.nectar.org.au/
 This is where you can go once you return to your homes, and look to increase your understanding of
 the Research cloud, the home of your free computer and usb stick!
 
-**Activity:** Close the support tab of the browser and return to the dashboard.
+-- *Slide* --
 
-**A:** Hold up a Red sticky note if you have lost the dashboard!
+## Close the support tab of the browser and return to the dashboard.
+
+* <span style="color:red">&#9632;</span> = I've lost the dashboard!
+* <span style="color:green">&#9632;</span> = I'm good to go!
+
+-- *Slide End* --
 
 Between the two drop downs NeCTAR have placed an item titled "Support Ticket". This is
 where you should first turn if you need help.
 
-**Activity:** Get everyone to click on the "Support Ticket" link of the top bar of the dashboard.
+-- *Slide* --
 
-The dialogue brought up allows you to directly submit a help request. 
+### Click on the "Support Ticket" link of the top bar of the dashboard.
+
+* <span style="color:red">&#9632;</span> = I can't see it!
+* <span style="color:green">&#9632;</span> = I've clicked!
+
+-- *Slide End* --
+
+The dialogue you've brought up allows you to directly submit a help request. 
 
 But it has a search option on the right! 
 
@@ -1112,7 +1125,7 @@ What does an approved allocation request become?
 1. a project
 1. a collaboration
 1. an empire
-1. a task
+1. a chore
 
 -- *Slide End* --
 
