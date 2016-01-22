@@ -15,6 +15,15 @@ bug.
 Advantage is that it opens its default shell into the users home windows directory.
 Disadvantage is that the user is limited to one key.
 
+To run X11 with Babun, you are supposed to do
+
+`pact install xinit xorg-server`
+
+In a Babun console. However, when I run it I get 408 errors: and no packages installed. I decided not to spend
+time on chasing this up as we are going change the full course to use whatever Intersect have used in their
+training. This is Putty for ssh (http://training.nectar.org.au/package07/sections/connectViaSSH.html) and
+Xming (http://training.nectar.org.au/package07/sections/guiViaSSH.html)
+
 ## [Moba XTerm](http://mobaxterm.mobatek.net/)
 
 Worked flawlessly: but very different experience to regular osx shell.
