@@ -10,6 +10,20 @@ your tour guide is ...
 
 -- *Slide* --
 
+# Goals for today
+
+To become familiar with the Research Cloud by:
+
+* Launching your computer on the cloud
+* Accessing it
+* Updating it
+* Terminating it
+* Using the cloud data store
+
+And to know where to go to get help and training.
+
+-- *Slide End* --
+
 -- *Slide* --
 
 ## This is a... ?
