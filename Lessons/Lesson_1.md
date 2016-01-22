@@ -689,6 +689,33 @@ ubuntu@drupal:~$
 
 -- *Slide End* --
 
+## apt-get
+
+**Q:** So here’s a thought experiment: you fire up a machine that uses a NeCTAR image as it’s base. Remember that
+the image is a file that is copied across to where ever your computer is running, and becomes the hard drive
+for your computer.
+ 
+Then NeCTAR release a new copy of the image with a security update applied. 
+Remember, your machine is based on a copy of that older image. 
+
+**Demonstrate:** Do a whiteboard drawing of this.
+
+-- *Slide* --
+
+### Is your machine likely to have the NeCTAR update applied to it as well?
+
+
+* <span style="color:red">&#9632;</span> = No!
+* <span style="color:green">&#9632;</span> = Yes, the changes will somehow percolate across...
+
+-- *Slide End* --
+
+**A:** No. the only way to benefit from that update is to start up a new machine based on the 
+new image that NeCTAR have provided. So you have to either maintain your computer yourself, 
+or start from scratch on a regular  basis.
+
+But never fear!
+
 -- *Slide* --
 
 ## The next piece of magic
@@ -788,7 +815,9 @@ And a Red sticky note if you need help.
 
 -- *Slide* --
 
-<img src="//imgs.xkcd.com/comics/sandwich.png" title="Proper User Policy apparently means Simon Says." alt="Sandwich">
+## xkcd 149
+
+<img src="http://imgs.xkcd.com/comics/sandwich.png" title="The power of sudo" alt="Sandwich">
 
 -- *Slide End* --
 
