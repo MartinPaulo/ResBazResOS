@@ -27,6 +27,10 @@ NeCTAR's online training can be found at:
 
 * http://training.nectar.org.au/package07/sections/connectViaSSH.html
 
+### Running X11 applications on an ssh connection
+
+* http://training.nectar.org.au/package07/sections/guiViaSSH.html
+
 ### apt-get and apt-update
 
 * http://training.nectar.org.au/package07/sections/firstSSHCommands.html
