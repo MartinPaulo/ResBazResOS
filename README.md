@@ -66,6 +66,11 @@ The directories that make up this project are as follows:
 
 ## Instructors notes
 
+### Windows
+
+A number of different Windows [terminals were evaluated](Resources/WindowsShells.md). In the end, for this day only,
+we decided on Babun. Instructions to install it are [here](Resources/Babun.md)
+
 ### In general
 
 Each person being taught needs to be given 
