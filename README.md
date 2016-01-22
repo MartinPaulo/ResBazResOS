@@ -27,6 +27,34 @@ Or:
     git submodule init
     git submodule update
 
+## To regenerate the slides
+
+The SlideExtractor.jar in the root directory will re-create the slides if needed.
+
+To run it ensure that the java version installed is java 8:
+
+```bash
+java -version
+```
+
+should return something along the lines of `java version "1.8.0_65"`.
+
+If it doesn't then install java 8 from here: http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html
+
+Then in a command prompt in the root directory simply issue:
+
+```bash
+java -jar SlideExtractor.jar
+```
+
+You should see something like the following fly by:
+
+```bash
+Working on: ./Lessons/Lesson_1.md
+Writing to: ./Presentation/Lesson_1.html
+Writing to: ./Presentation/index.html
+```
+
 ## Folders
 
 The directories that make up this project are as follows:
@@ -88,13 +116,7 @@ However I can't use it because of Intersect defect
 [INC0012566](https://intersect.service-now.com/ess/Incident+Information.do?sysparm_document_key=incident,f61198d06fc15600cb82c6168d3ee4c8)
 (my aaf email is different to my NeCTAR user id). So if we do show it off someone else needs to do the work.
 
-Should we use the paint video to explain keys? https://www.youtube.com/watch?v=YEBfamv-_do
-
-### Todo
-
-#### Must do
-
-1. [ ] Work through the prerequisites and work out how to deal with them.
+We could use the paint video to explain keys? https://www.youtube.com/watch?v=YEBfamv-_do
 
 
 
